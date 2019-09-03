@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.pcss"],"names":[],"mappings":"AAAA;EACE,cAAc;AAIhB;EAHE;IACE,cAAc;EAChB","file":"react-postcss-parcel.e31bb0bc.css","sourceRoot":"..","sourcesContent":["body {\n  font-size:20px;\n  div {\n    font-size:40px;\n  }\n}\n"]}

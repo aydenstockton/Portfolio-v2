@@ -1,0 +1,27 @@
+{
+  "name": "boilerplate-designers-csaa",
+  "version": "1.0.0",
+  "description": "https://blog.pshrmn.com/entry/simple-react-router-v4-tutorial/",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "autoprefixer": "^9.6.1",
+    "postcss": "^7.0.17",
+    "postcss-cli": "^6.1.3",
+    "postcss-mixins": "^6.2.2",
+    "postcss-nested": "^4.1.2",
+    "postcss-nesting": "^7.0.1",
+    "postcss-normalize": "^8.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "react-router-dom": "^5.0.1"
+  }
+}

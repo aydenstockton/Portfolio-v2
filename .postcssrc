@@ -1,0 +1,12 @@
+{
+  "modules": false,
+  "plugins": {
+    "postcss-normalize":true,
+    "postcss-nested":true,
+    "postcss-preset-env":true,
+    "postcss-mixins":true,
+    "autoprefixer": {
+      "grid": true
+    }
+  }
+}
