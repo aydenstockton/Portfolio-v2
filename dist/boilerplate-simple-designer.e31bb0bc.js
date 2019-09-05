@@ -34530,7 +34530,7 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Home = function Home() {
-  return _react.default.createElement("div", null, _react.default.createElement("h1", null, "Welcome to the my website!"));
+  return _react.default.createElement("div", null, _react.default.createElement("h1", null, "Hey, I'm Ayden. Welcome to my portfolio. I design a lot of things. I\u2019m a Product Designer. But I\u2019m also a Visual Designer and a Motion Designer."));
 };
 
 var _default = Home;
