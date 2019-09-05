@@ -17,7 +17,7 @@ const Project = (props) => {
     <div>
       <h1>{project.name} (#{project.number})</h1>
       <h2>Description: {project.description}</h2>
-      <Link to='/portfolio'>Back</Link>
+      <Link to='/work'>Back</Link>
     </div>
   )
 }

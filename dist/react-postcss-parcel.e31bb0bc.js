@@ -34739,7 +34739,7 @@ var Main = function Main() {
 
 var _default = Main;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./Home":"components/Home.js","./Portfolio":"components/Portfolio.js","./Contact":"components/Contact.js"}],"components/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./Home":"components/Home.js","./Portfolio":"components/Work.js","./Contact":"components/Contact.js"}],"components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
