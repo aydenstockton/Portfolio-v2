@@ -7,7 +7,7 @@ import Contact from './Contact'
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /work
 // and /contact routes will match any pathname that starts
-// with /work or /contact. The / route will only match
+// with /work or /contact. The /route will only match
 // when the pathname is exactly the string "/"
 const Main = () => (
   <main>

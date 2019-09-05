@@ -7,21 +7,25 @@ body {
   flex: 1;
   width: 100%;
   margin: 0;
-  h1 {
+}
+
+body h1 {
     font-family: Maiola, serif;
     color: white;
     font-size: 56px;
     font-weight: 400;
     font-style: normal;
   }
-  h2 {
+
+body h2 {
     font-family: Maiola, serif;
     color: white;
     font-size: 32px;
     font-weight: 400;
     font-style: normal;
   }
-  li {
+
+body li {
     font-family: Montserrat, sans-serif;
     color: white;
     font-size: 18px;
@@ -29,18 +33,22 @@ body {
     font-style: normal;
     list-style-type: none;
   }
-  a {
+
+body a {
     text-decoration: none;
-    [status=active] {
+  }
+
+body a [status=active] {
       color: white;
       opacity: 1;
     }
-    [status=dormant] {
+
+body a [status=dormant] {
       color: white;
       opacity: 0.5;
     }
-  }
-  header {
+
+body header {
     display: flex;
     flex: 1;
     height: 136px;
@@ -49,4 +57,6 @@ body {
     left: 0;
     background-image: linear-gradient(rgba(0,0,0,1)80%, rgba(0,0,0,0));
   }
-}
+
+
+/*# sourceMappingURL=/boilerplate-simple-designer.e31bb0bc.css.map */

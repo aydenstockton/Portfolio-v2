@@ -1,7 +1,7 @@
-import React from 'react'
-import { Switch, Route } from 'react-router-dom'
-import FullPortfolio from './FullPortfolio'
-import Project from './Project'
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import FullPortfolio from './FullPortfolio';
+import Project from './Project';
 
 // The Work component matches one of two different routes
 // depending on the full pathname
