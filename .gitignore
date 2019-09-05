@@ -1,8 +1,10 @@
 .cache
 node_modules
 yarn-error.log
-/.idea/vcs.xml
+.idea
+Dist
 /.idea/workspace.xml
 /.idea/misc.xml
 *.xml
 .idea/workspace.xml
+.DS_Store
