@@ -1,15 +1,20 @@
 import React from 'react';
-import Main from './Main';
+import ProjectAPI from './Api';
 
-const Thumbnail = () => (
-    <div>
+function Thumbnail() {
+    return (
+    <div className="Thumbnail">
         <div>
-            <img/>
+            <img
+                src={props.}
+            />
         </div>
         <div>
-            <p>{projects.name}</p>
+            <p>
+                {Api.projects.name}
+            </p>
         </div>
     </div>
-)
+    )};
 
 export Thumbnail
