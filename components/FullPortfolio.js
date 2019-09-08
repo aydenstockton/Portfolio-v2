@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectAPI from '../api'
+import ProjectAPI from '../Api'
 import { Link } from 'react-router-dom'
 
 // The FullPortfolio iterates over all of the projects and creates
@@ -10,7 +10,7 @@ const FullPortfolio = () => (
       {
         ProjectAPI.all().map(p => (
           <li key={p.number}>
-            <Link to={`/portfolio/${p.number}`}>{p.name}</Link>
+            <Link to={`/work/${p.number}`}>{p.name}</Link>
           </li>
         ))
       }
