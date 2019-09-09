@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 body {
-  background-color: white;
+  background-color: #000;
   display: flex;
   flex: 1;
   width: 100%;
@@ -11,15 +11,16 @@ body {
 
 body h1 {
     font-family: Maiola, serif;
-    color: white;
-    font-size: 56px;
+    color: #CCC;
+    font-size: 48px;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.5;
   }
 
 body h2 {
     font-family: Maiola, serif;
-    color: white;
+    color: #CCC;
     font-size: 32px;
     font-weight: 400;
     font-style: normal;
@@ -36,6 +37,7 @@ body li {
 
 body a {
     text-decoration: none;
+    color: white;
   }
 
 body a [status=active] {
@@ -48,15 +50,43 @@ body a [status=dormant] {
       opacity: 0.5;
     }
 
-body header {
-    display: flex;
-    flex: 1;
-    height: 136px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(rgba(0,0,0,1)80%, rgba(0,0,0,0));
-  }
+body div header {
+      display: flex;
+      flex: 1;
+      height: 136px;
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(rgba(0,0,0,1)80%, rgba(0,0,0,0));
+      align-items: center;
+      justify-content: space-between;
+    }
+
+body div header nav {
+        display: flex;
+        flex: 1;
+      }
+
+body div header nav ul li{
+            display: inline;
+            padding: 16px;
+          }
+
+body div main {
+      display: flex;
+      flex: 1;
+      width: 100vw;
+      margin-top: 136px;
+      justify-content: center;
+    }
+
+body div main div {
+        display: flex;
+        width: 75vw;
+        max-width: 960px;
+        justify-content: center;
+      }
 
 
 /*# sourceMappingURL=/boilerplate-simple-designer.e31bb0bc.css.map */

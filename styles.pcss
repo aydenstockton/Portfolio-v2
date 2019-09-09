@@ -2,21 +2,22 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 body {
-  background-color: white;
+  background-color: #000;
   display: flex;
   flex: 1;
   width: 100%;
   margin: 0;
   h1 {
     font-family: Maiola, serif;
-    color: white;
-    font-size: 56px;
+    color: #CCC;
+    font-size: 48px;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.5;
   }
   h2 {
     font-family: Maiola, serif;
-    color: white;
+    color: #CCC;
     font-size: 32px;
     font-weight: 400;
     font-style: normal;
@@ -31,6 +32,7 @@ body {
   }
   a {
     text-decoration: none;
+    color: white;
     [status=active] {
       color: white;
       opacity: 1;
@@ -40,13 +42,41 @@ body {
       opacity: 0.5;
     }
   }
-  header {
-    display: flex;
-    flex: 1;
-    height: 136px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(rgba(0,0,0,1)80%, rgba(0,0,0,0));
+  div {
+    header {
+      display: flex;
+      flex: 1;
+      height: 136px;
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(rgba(0,0,0,1)80%, rgba(0,0,0,0));
+      align-items: center;
+      justify-content: space-between;
+      nav {
+        display: flex;
+        flex: 1;
+        ul {
+          li{
+            display: inline;
+            padding: 16px;
+          }
+        }
+      }
+    }
+    main {
+      display: flex;
+      flex: 1;
+      width: 100vw;
+      margin-top: 136px;
+      justify-content: center;
+      div {
+        display: flex;
+        width: 75vw;
+        max-width: 960px;
+        justify-content: center;
+      }
+    }
   }
 }

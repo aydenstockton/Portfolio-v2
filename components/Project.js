@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectAPI from '../api'
+import ProjectAPI from '../Api'
 import { Link } from 'react-router-dom'
 
 // The Project looks up the project using the number parsed from
@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 const Project = (props) => {
   const project = ProjectAPI.get(
     parseInt(props.match.params.project, 10)
-  )
+  );
   console.log(props)
   if (!project) {
     return <div>Sorry, but the Project was not found</div>
@@ -20,6 +20,6 @@ const Project = (props) => {
       <Link to='/work'>Back</Link>
     </div>
   )
-}
+};
 
 export default Project

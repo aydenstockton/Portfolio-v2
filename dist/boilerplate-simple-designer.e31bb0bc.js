@@ -34530,12 +34530,12 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Home = function Home() {
-  return _react.default.createElement("div", null, _react.default.createElement("h1", null, "Welcome to the my website!"));
+  return _react.default.createElement("div", null, _react.default.createElement("h1", null, "Hey, I'm Ayden. Welcome to my portfolio. I design a lot of things. I\u2019m a Product Designer. But I\u2019m also a Visual Designer and a Motion Designer."));
 };
 
 var _default = Home;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"api.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js"}],"Api.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34548,28 +34548,64 @@ exports.default = void 0;
 var ProjectAPI = {
   projects: [{
     number: 1,
-    name: "Insurance Portal Tables",
-    description: "Lorem"
+    name: "Q Mobile App",
+    description: "Lorem",
+    type: "Product Design",
+    theme: "Universe"
   }, {
     number: 2,
-    name: "Cat Claims v1",
-    description: "Ipsum"
+    name: "Chocolate",
+    description: "Ipsum",
+    type: "Product Design",
+    theme: "Universe"
   }, {
     number: 3,
-    name: "Salt Squad Branding",
-    description: "Hola"
+    name: "Preference History",
+    description: "Hola",
+    type: "Product Design",
+    theme: "Canvas"
   }, {
     number: 4,
-    name: "Skatetastic",
-    description: "Dola"
+    name: "Swift Shift",
+    description: "Dola",
+    type: "Product Design",
+    theme: "Universe"
   }, {
     number: 5,
-    name: "Little Possum Man",
-    description: "Uno dos tres"
+    name: "Business Card",
+    description: "Uno dos tres",
+    type: "Product Design",
+    theme: "Universe"
   }, {
     number: 6,
-    name: "I wish I was",
-    description: "cuatro"
+    name: "Premium Change Tool",
+    description: "cuatro",
+    type: "Product Design",
+    theme: "Canvas"
+  }, {
+    number: 7,
+    name: "okra",
+    description: "cuatro",
+    type: "Visual Design",
+    theme: "Universe"
+  }, {
+    number: 8,
+    name: "MyPolicy Mobile App Branding",
+    description: "cuatro",
+    type: "Visual Design",
+    theme: "Universe"
+  }, {
+    number: 9,
+    name: "New York Times",
+    description: "cuatro",
+    type: "Visual Design",
+    theme: "Canvas"
+  }, {
+    number: 10,
+    name: "Vista",
+    description: "cuatro",
+    type: "Product Design",
+    theme: "Canvas"
   }],
   all: function all() {
     return this.projects;
@@ -34594,7 +34630,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _api = _interopRequireDefault(require("../api"));
+var _Api = _interopRequireDefault(require("../Api"));
 
 var _reactRouterDom = require("react-router-dom");
 
@@ -34603,18 +34639,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // The FullPortfolio iterates over all of the projects and creates
 // a link to their project page.
 var FullPortfolio = function FullPortfolio() {
-  return _react.default.createElement("div", null, _react.default.createElement("ul", null, _api.default.all().map(function (p) {
+  return _react.default.createElement("div", null, _react.default.createElement("ul", null, _Api.default.all().map(function (p) {
     return _react.default.createElement("li", {
       key: p.number
     }, _react.default.createElement(_reactRouterDom.Link, {
-      to: "/portfolio/".concat(p.number)
+      to: "/work/".concat(p.number)
     }, p.name));
   })));
 };
 
 var _default = FullPortfolio;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../api":"api.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"components/Project.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../Api":"Api.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"components/Project.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34624,7 +34660,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _api = _interopRequireDefault(require("../api"));
+var _Api = _interopRequireDefault(require("../Api"));
 
 var _reactRouterDom = require("react-router-dom");
 
@@ -34634,7 +34670,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // the URL's pathname. If no Project is found with the given
 // number, then a "Project not found" message is displayed.
 var Project = function Project(props) {
-  var project = _api.default.get(parseInt(props.match.params.project, 10));
+  var project = _Api.default.get(parseInt(props.match.params.project, 10));
 
   console.log(props);
 
@@ -34649,7 +34685,7 @@ var Project = function Project(props) {
 
 var _default = Project;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../api":"api.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"components/Work.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../Api":"Api.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"components/Work.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
