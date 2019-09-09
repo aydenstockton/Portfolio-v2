@@ -34551,7 +34551,8 @@ var ProjectAPI = {
     name: "Q Mobile App",
     description: "Lorem",
     type: "Product Design",
-    theme: "Universe"
+    theme: "Universe",
+    src: "path/to/file.png"
   }, {
     number: 2,
     name: "Chocolate",
@@ -34620,7 +34621,31 @@ var ProjectAPI = {
 };
 var _default = ProjectAPI;
 exports.default = _default;
-},{}],"components/FullPortfolio.js":[function(require,module,exports) {
+},{}],"components/Thumbnail.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Thumbnail = function Thumbnail(_ref) {
+  var name = _ref.name,
+      src = _ref.src;
+  return _react.default.createElement("div", {
+    className: "Thumbnail"
+  }, _react.default.createElement("div", null, _react.default.createElement("img", {
+    src: src
+  })), _react.default.createElement("div", null, _react.default.createElement("p", null, name)));
+};
+
+var _default = Thumbnail;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"components/FullPortfolio.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34634,6 +34659,8 @@ var _Api = _interopRequireDefault(require("../Api"));
 
 var _reactRouterDom = require("react-router-dom");
 
+var _Thumbnail = _interopRequireDefault(require("./Thumbnail"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // The FullPortfolio iterates over all of the projects and creates
@@ -34645,12 +34672,17 @@ var FullPortfolio = function FullPortfolio() {
     }, _react.default.createElement(_reactRouterDom.Link, {
       to: "/work/".concat(p.number)
     }, p.name));
-  })));
+  })), _Api.default.all().map(function (p) {
+    return _react.default.createElement(_Thumbnail.default, {
+      src: p.src,
+      name: p.name
+    });
+  }));
 };
 
 var _default = FullPortfolio;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../Api":"Api.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"components/Project.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../Api":"Api.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./Thumbnail":"components/Thumbnail.js"}],"components/Project.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34915,7 +34947,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53112" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58171" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

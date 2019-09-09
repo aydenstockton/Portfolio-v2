@@ -9,3 +9,4 @@ Dist
 .idea/workspace.xml
 .DS_Store
 workspace.xml
+dist/**

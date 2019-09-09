@@ -3,7 +3,7 @@
 // solution would be more appropriate.
 const ProjectAPI = {
   projects: [
-    { number: 1, name: "Q Mobile App", description: "Lorem", type: "Product Design", theme: "Universe" },
+    { number: 1, name: "Q Mobile App", description: "Lorem", type: "Product Design", theme: "Universe", src:"path/to/file.png"},
     { number: 2, name: "Chocolate", description: "Ipsum", type: "Product Design", theme: "Universe" },
     { number: 3, name: "Preference History", description: "Hola", type: "Product Design", theme: "Canvas" },
     { number: 4, name: "Swift Shift", description: "Dola", type: "Product Design", theme: "Universe"},
@@ -14,7 +14,7 @@ const ProjectAPI = {
     { number: 9, name: "New York Times", description: "cuatro", type: "Visual Design", theme: "Canvas" },
     { number: 10, name: "Vista", description: "cuatro", type: "Product Design", theme: "Canvas" },
   ],
-  all: function() { return this.projects},
+  all: function() { return this.projects;},
   get: function(id) {
     const isProject = p => p.number === id
     return this.projects.find(isProject);
