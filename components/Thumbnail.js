@@ -1,5 +1,6 @@
 import React from 'react';
-import ProjectAPI from './Api';
+import ProjectAPI from '../Api'
+
 
 function Thumbnail() {
     return (

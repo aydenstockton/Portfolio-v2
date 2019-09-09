@@ -34548,28 +34548,64 @@ exports.default = void 0;
 var ProjectAPI = {
   projects: [{
     number: 1,
-    name: "Insurance Portal Tables",
-    description: "Lorem"
+    name: "Q Mobile App",
+    description: "Lorem",
+    type: "Product Design",
+    theme: "Universe"
   }, {
     number: 2,
-    name: "Cat Claims v1",
-    description: "Ipsum"
+    name: "Chocolate",
+    description: "Ipsum",
+    type: "Product Design",
+    theme: "Universe"
   }, {
     number: 3,
-    name: "Salt Squad Branding",
-    description: "Hola"
+    name: "Preference History",
+    description: "Hola",
+    type: "Product Design",
+    theme: "Canvas"
   }, {
     number: 4,
-    name: "Skatetastic",
-    description: "Dola"
+    name: "Swift Shift",
+    description: "Dola",
+    type: "Product Design",
+    theme: "Universe"
   }, {
     number: 5,
-    name: "Little Possum Man",
-    description: "Uno dos tres"
+    name: "Business Card",
+    description: "Uno dos tres",
+    type: "Product Design",
+    theme: "Universe"
   }, {
     number: 6,
-    name: "I wish I was",
-    description: "cuatro"
+    name: "Premium Change Tool",
+    description: "cuatro",
+    type: "Product Design",
+    theme: "Canvas"
+  }, {
+    number: 7,
+    name: "okra",
+    description: "cuatro",
+    type: "Visual Design",
+    theme: "Universe"
+  }, {
+    number: 8,
+    name: "MyPolicy Mobile App Branding",
+    description: "cuatro",
+    type: "Visual Design",
+    theme: "Universe"
+  }, {
+    number: 9,
+    name: "New York Times",
+    description: "cuatro",
+    type: "Visual Design",
+    theme: "Canvas"
+  }, {
+    number: 10,
+    name: "Vista",
+    description: "cuatro",
+    type: "Product Design",
+    theme: "Canvas"
   }],
   all: function all() {
     return this.projects;
