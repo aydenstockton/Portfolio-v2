@@ -7,20 +7,7 @@ import Thumbnail from './Thumbnail'
 // a link to their project page.
 const FullPortfolio = () => (
   <div>
-    <ul>
-      {
-        ProjectAPI.all().map(p => (
-          <li key={p.number}>
-            <Link to={`/work/${p.number}`}>{p.name}</Link>
-          </li>
-        ))
-      }
-    </ul>
-      {
-          ProjectAPI.all().map(p => (
-              <Thumbnail src={p.src} name={p.name}/>
-          ))
-      }
+      <Thumbnail/>
   </div>
 )
 

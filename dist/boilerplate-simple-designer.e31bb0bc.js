@@ -34530,7 +34530,9 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Home = function Home() {
-  return _react.default.createElement("div", null, _react.default.createElement("h1", null, "Hey, I'm Ayden. Welcome to my portfolio. I design a lot of things. I\u2019m a Product Designer. But I\u2019m also a Visual Designer and a Motion Designer."));
+  return _react.default.createElement("div", {
+    className: "Welcome"
+  }, _react.default.createElement("h1", null, "Hey, I'm Ayden. Welcome to my portfolio. I design a lot of things. I\u2019m a Product Designer. But I\u2019m also a Visual Designer and a Motion Designer."));
 };
 
 var _default = Home;
@@ -34631,21 +34633,30 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _Api = _interopRequireDefault(require("../Api"));
+
+var _reactRouterDom = require("react-router-dom");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Thumbnail = function Thumbnail(_ref) {
   var name = _ref.name,
       src = _ref.src;
-  return _react.default.createElement("div", {
-    className: "Thumbnail"
-  }, _react.default.createElement("div", null, _react.default.createElement("img", {
-    src: src
-  })), _react.default.createElement("div", null, _react.default.createElement("p", null, name)));
+  return _Api.default.all().map(function (p) {
+    return _react.default.createElement("div", {
+      className: "Thumbnail",
+      key: p.number
+    }, _react.default.createElement(_reactRouterDom.Link, {
+      to: "/work/".concat(p.number)
+    }, p.name), _react.default.createElement("div", null, _react.default.createElement("img", {
+      src: src
+    })), _react.default.createElement("div", null, _react.default.createElement("p", null, name)));
+  });
 };
 
 var _default = Thumbnail;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"components/FullPortfolio.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../Api":"Api.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"components/FullPortfolio.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34666,18 +34677,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // The FullPortfolio iterates over all of the projects and creates
 // a link to their project page.
 var FullPortfolio = function FullPortfolio() {
-  return _react.default.createElement("div", null, _react.default.createElement("ul", null, _Api.default.all().map(function (p) {
-    return _react.default.createElement("li", {
-      key: p.number
-    }, _react.default.createElement(_reactRouterDom.Link, {
-      to: "/work/".concat(p.number)
-    }, p.name));
-  })), _Api.default.all().map(function (p) {
-    return _react.default.createElement(_Thumbnail.default, {
-      src: p.src,
-      name: p.name
-    });
-  }));
+  return _react.default.createElement("div", null, _react.default.createElement(_Thumbnail.default, null));
 };
 
 var _default = FullPortfolio;
@@ -34947,7 +34947,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58171" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63353" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

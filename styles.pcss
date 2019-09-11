@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/iwr7rnl.css");
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url("https://use.typekit.net/iwr7rnl.css");
 
 body {
   background-color: #000;
@@ -73,9 +74,32 @@ body {
       justify-content: center;
       div {
         display: flex;
-        width: 75vw;
-        max-width: 960px;
+        flex-wrap: wrap;
+        width: 90vw;
+        max-width: 1440px;
         justify-content: center;
+      }
+      .Welcome {
+        display: flex;
+        width: 80%;
+        max-width: 960px;
+      }
+      .Thumbnail {
+        display: flex;
+        border: 1px solid red;
+        width: 49%;
+        div {
+          img {
+
+          }
+          p {
+            font-family: aktiv-grotesk-extended, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 80px;
+            color: white;
+          }
+        }
       }
     }
   }
