@@ -34554,7 +34554,7 @@ var ProjectAPI = {
     description: "Lorem",
     type: "Product Design",
     theme: "Universe",
-    src: "path/to/file.png"
+    src: "q-thumbnail.png"
   }, {
     number: 2,
     name: "Chocolate",
@@ -34646,11 +34646,11 @@ var Thumbnail = function Thumbnail(_ref) {
     return _react.default.createElement("div", {
       className: "Thumbnail",
       key: p.number
-    }, _react.default.createElement(_reactRouterDom.Link, {
-      to: "/work/".concat(p.number)
-    }, p.name), _react.default.createElement("div", null, _react.default.createElement("img", {
+    }, _react.default.createElement("div", null, _react.default.createElement("img", {
       src: src
-    })), _react.default.createElement("div", null, _react.default.createElement("p", null, name)));
+    })), _react.default.createElement("div", null, _react.default.createElement("p", null, name)), _react.default.createElement(_reactRouterDom.Link, {
+      to: "/work/".concat(p.number)
+    }, p.name));
   });
 };
 

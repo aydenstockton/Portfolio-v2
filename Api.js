@@ -3,7 +3,7 @@
 // solution would be more appropriate.
 const ProjectAPI = {
   projects: [
-    { number: 1, name: "Q Mobile App", description: "Lorem", type: "Product Design", theme: "Universe", src:"path/to/file.png"},
+    { number: 1, name: "Q Mobile App", description: "Lorem", type: "Product Design", theme: "Universe", src:"q-thumbnail.png"},
     { number: 2, name: "Chocolate", description: "Ipsum", type: "Product Design", theme: "Universe" },
     { number: 3, name: "Preference History", description: "Hola", type: "Product Design", theme: "Canvas" },
     { number: 4, name: "Swift Shift", description: "Dola", type: "Product Design", theme: "Universe"},
