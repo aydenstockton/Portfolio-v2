@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50606b24-a584-4535-955a-93d6b85c925c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FullPortfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FullPortfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Thumbnail.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Thumbnail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/boilerplate-simple-designer.e31bb0bc.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/boilerplate-simple-designer.e31bb0bc.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/boilerplate-simple-designer.e31bb0bc.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/boilerplate-simple-designer.e31bb0bc.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/boilerplate-simple-designer.e31bb0bc.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/boilerplate-simple-designer.e31bb0bc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/boilerplate-simple-designer.e31bb0bc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/boilerplate-simple-designer.e31bb0bc.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.pcss" beforeDir="false" afterPath="$PROJECT_DIR$/styles.pcss" afterDir="false" />
-    </list>
+    <list default="true" id="50606b24-a584-4535-955a-93d6b85c925c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/styles.pcss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="447">
-              <caret line="90" column="13" lean-forward="true" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+              <caret line="90" column="13" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -141,7 +131,22 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="boilerplate-simple-designer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/development/boilerplate-simple-designer" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="boilerplate-simple-designer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/development/boilerplate-simple-designer" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,7 +223,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10605000" />
+    <option name="totallyTimeSpent" value="10802000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -231,7 +236,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="972" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7162872" visible="true" weight="0.13441832" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -385,7 +389,7 @@
     <entry file="file://$PROJECT_DIR$/styles.pcss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
-          <caret line="90" column="13" lean-forward="true" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+          <caret line="90" column="13" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
         </state>
       </provider>
     </entry>
