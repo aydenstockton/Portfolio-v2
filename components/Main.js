@@ -3,7 +3,6 @@ import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
 import Work from './Work'
 import Contact from './Contact'
-
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /work
 // and /contact routes will match any pathname that starts
