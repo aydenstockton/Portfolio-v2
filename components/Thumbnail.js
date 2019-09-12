@@ -8,10 +8,10 @@ const Thumbnail = ({name, src}) => (
     ProjectAPI.all().map(p => (
         <Link to={`/work/${p.number}`}>
             <div className="Thumbnail" key={p.number}>
-                <div>
+                <div className="picture-wrapper">
                     <img src={p.src}/>
                 </div>
-                <div>
+                <div className="name-wrapper">
                     <p>{p.name}</p>
                 </div>
             </div>

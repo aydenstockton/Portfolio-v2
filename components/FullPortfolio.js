@@ -6,7 +6,7 @@ import Thumbnail from './Thumbnail'
 // The FullPortfolio iterates over all of the projects and creates
 // a link to their project page.
 const FullPortfolio = () => (
-  <div>
+  <div className="work-wrapper">
       <Thumbnail/>
   </div>
 )

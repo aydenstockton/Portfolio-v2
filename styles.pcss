@@ -4,10 +4,14 @@
 
 .switch-wrapper {
   position: relative;
+  width: 100%
 }
 
 .switch-wrapper > div {
   position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 body {
@@ -73,6 +77,7 @@ body {
         background-image: linear-gradient(rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
         align-items: center;
         justify-content: space-between;
+        z-index: 99;
 
         nav {
           display: flex;
@@ -94,10 +99,10 @@ body {
         margin-top: 136px;
         justify-content: center;
 
-        div {
+        .work-wrapper {
           display: flex;
           flex-wrap: wrap;
-          width: 90%;
+          width: 100%;
           max-width: 1440px;
           justify-content: center;
 
@@ -119,16 +124,19 @@ body {
           border: 1px solid red;
           width: 100%;
 
-          div {
+          .picture-wrapper {
             img {
-
+              width: 100%;
             }
+          }
 
+          .name-wrapper {
+            width: 50%;
             p {
               font-family: aktiv-grotesk-extended, sans-serif;
-              font-weight: 500;
+              font-weight: 400;
               font-style: normal;
-              font-size: 80px;
+              font-size: 72px;
               color: white;
             }
           }
