@@ -8,7 +8,8 @@
     "start": "parcel index.html"
   },
   "dependencies": {
-    "img": "^3.0.3"
+    "img": "^3.0.3",
+    "react-router-scroll-top": "^0.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
