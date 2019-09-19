@@ -1,7 +1,17 @@
 import React from 'react'
 import ProjectAPI from '../Api'
 import { Link } from 'react-router-dom'
+import ProjectRow from './ProjectRow'
 
+const Rows = ({layout}) => (
+    layout.map((row, index) => (
+        <ProjectRow
+            title={row.title}
+            description={row.description}
+            image={row.img}
+        />
+    ))
+)
 // The Project looks up the project using the number parsed from
 // the URL's pathname. If no Project is found with the given
 // number, then a "Project not found" message is displayed.
@@ -9,7 +19,7 @@ const Project = (props) => {
   const project = ProjectAPI.get(
     parseInt(props.match.params.project, 10)
   );
-  console.log(props)
+
   if (!project) {
     return <div>Sorry, but the Project was not found</div>
   }
@@ -17,6 +27,10 @@ const Project = (props) => {
     <div>
       <h1>{project.name} (#{project.number})</h1>
       <h2>Description: {project.description}</h2>
+        {
+            project.layout &&
+                <Rows layout={project.layout} />
+        }
       <Link to='/work'>Back</Link>
     </div>
   )
