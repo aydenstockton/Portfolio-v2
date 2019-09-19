@@ -9,19 +9,21 @@ import React from 'react';
        >
 */
 const ProjectRow = ({title, description, image}) => (
-    <div>
-        <div>
-            {title &&
-                <title>
-                    {title}
-                </title>
-            }
-            <p>
-                {description}
-            </p>
+    <div className="project-piece">
+        <div className="project-description">
+            <div>
+                {title &&
+                    <title>
+                        {title}
+                    </title>
+                }
+                <p>
+                    {description}
+                </p>
+            </div>
         </div>
         {image &&
-            <div>
+            <div className="project-image">
                 <img src={image}/>
             </div>
         }

@@ -1,6 +1,7 @@
 @import url("https://use.typekit.net/iwr7rnl.css");
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url("https://use.typekit.net/iwr7rnl.css");
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
 
 .switch-wrapper {
   position: relative;
@@ -25,11 +26,11 @@ body {
     width: 100vw;
 
     h1 {
-      font-family: Maiola, serif;
-      color: #CCC;
-      font-size: 48px;
-      font-weight: 400;
+      font-family: aktiv-grotesk-extended, sans-serif;
+      font-weight: 300;
       font-style: normal;
+      font-size: 56px;
+      color: white;
       line-height: 1.5;
     }
 
@@ -153,6 +154,55 @@ body {
             }
           }
         }
+      }
+    }
+  }
+}
+
+.project-page {
+  padding: 0 96px;
+  .project-piece {
+    display: flex;
+    justify-content: space-between;
+    &:nth-child(even) > .project-image {
+    order: -1;
+  }
+
+    .project-description {
+      display: flex;
+      flex-wrap: wrap;
+      width: 39%;
+      align-items: center;
+
+      div {
+        title {
+          display: block;
+          font-family: aktiv-grotesk-extended, sans-serif;
+          font-weight: 300;
+          font-style: normal;
+          font-size: 56px;
+          color: white;
+          opacity: 0.9;
+          line-height: 1.25;
+          margin-bottom: 32px;
+        }
+
+        p {
+          font-family: 'Space Mono', monospace;
+          font-size: 18px;
+          line-height: 1.45;
+          color: white;
+          opacity: 0.9;
+        }
+      }
+    }
+
+    .project-image {
+      display: flex;
+      width: 58%;
+
+      img {
+        width: 100%;
       }
     }
   }

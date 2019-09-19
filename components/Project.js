@@ -24,7 +24,7 @@ const Project = (props) => {
     return <div>Sorry, but the Project was not found</div>
   }
   return (
-    <div>
+    <div className="project-page">
       <h1>{project.name} (#{project.number})</h1>
       <h2>Description: {project.description}</h2>
         {

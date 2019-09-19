@@ -13,18 +13,15 @@ const ProjectAPI = {
             layout:[
                 {
                     type:"row",
-                    title:"first row",
-                    description:"not much to say here but someting still"
+                    title:"Defining the Experience",
+                    description:"After surveying a group of potential users I found that the priority for users is ease of access into a playlist. This lead to two main user flows that I sketched out on paper: Adding a new ‘Q’ and joining an existing ‘Q’.",
+                    img:"/img/q-sketch.png"
                 },
                 {
                     type:"row",
-                    description:"not much to say here but someting still",
-                    img:"img/logo.svg"
-                },
-                {
-                    type:"row",
-                    description:"three much to say here but someting still",
-                    img:"img/logo.svg"
+                    title:"Branding the Experience",
+                    description:"Once the flow was refined, the visual design and branding process started as small iterations on a few wireframes to help me understand which direction I wanted to go with the brand. After getting a few iterations out of the way, I took a step back and did a deeper branding study on what exactly the product is and how it should feel.",
+                    img:"/img/q-branding.png"
                 }
             ]
         },
