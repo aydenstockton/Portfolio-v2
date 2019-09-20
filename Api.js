@@ -9,8 +9,10 @@ const ProjectAPI = {
             type: "Product Design",
             theme: "Universe",
             src: "/img/q-device-thumbnail.png",
+            logo:"",
             intro:[
                 {
+                    banner:"",
                     overview:"The Q design effort entailed the end-to-end creation of a native app that started from a concept and ended at a fully branded product.",
                     problem:"Music is one of the most accessible ways to create and share experiences with people. Technology shouldn’t create barriers around shared experiences, it should foster them.",
                     goal:"Create a music app to remedy the inability to collaborate on music playlists across different streaming platforms and devices.",
@@ -22,7 +24,7 @@ const ProjectAPI = {
                 {
                     type:"row",
                     title:"Defining the Experience",
-                    description:"After surveying a group of potential users I found that the priority for users is ease of access into a playlist. This lead to two main user flows that I sketched out on paper: Adding a new ‘Q’ and joining an existing ‘Q’.",
+                    description:"After surveying a group of potential users I found that the priority for users is ease of access into a playlist. This led to two main user flows that I sketched out on paper: Adding a new ‘Q’ and joining an existing ‘Q’.",
                     img:"/img/q-sketch.png"
                 },
                 {
@@ -39,8 +41,10 @@ const ProjectAPI = {
             type: "Visual Design",
             theme: "Universe",
             src: "/img/choc-thumbnail.png",
+            logo:"",
             intro:[
                 {
+                    banner:"",
                     overview:"The Gravity Series is a 10 board series accompanied by 2 t-shirts and 3 sets of wheels. It was released for sale with the Wallride 32 release for Chocolate Skateboards.",
                     problem:"Every quarter, a new set of skateboard decks get released with their names. In some cases, designs can be individual and unrelated to each other. In most cases, like the gravity series, a system needs to be created where a singular design concept can be manipulated and applied across the entire team of pros.",
                     concept:"I've always been fascinated with space, physics, and science in general. In skateboarding, understanding physics, cause and effect, and space are critical to performing the tricks you want to. For this design series, I created a visual system out of particle \"nets\" that simulated forms from warped lines in reference to the way gravity affects particles in space.",
@@ -63,8 +67,10 @@ const ProjectAPI = {
             type: "Product Design",
             theme: "Canvas",
             src: "/img/p-hist-thumbnail.png",
+            logo:"",
             intro:[
                 {
+                    banner:"",
                     overview:"The preference history project effort consisted of a new UX and UI to log policy changes in regards to paperless settings. The timeline established by Project Managers was 4 weeks for design and testing and 4 weeks for development",
                     problem:"Our existing table pattern was taking agents too long to find information. Because agents have hundreds of calls per day, finding information quickly is critical.",
                     goal:"Create a UI that would scale to future history logging tools within multiple AAA products.",
@@ -87,8 +93,10 @@ const ProjectAPI = {
             type: "Product Design",
             theme: "Universe",
             src: "/img/ss-thumbnail.png",
+            logo:"",
             intro:[
                 {
+                    banner:"",
                     overview:"Swift Shift is a smart shift knob that is designed to enhance the driving experience by optimizing shift timing.",
                     problem:"Car enthusists love pushing their vehicles to the limit. For many, there is a desire to have an onboard shift timing assistant. For those of us who don't have the time, money, or knowledge to equip technical mods into our performance vehicles, there is no cheap solution to assist with shift timing.",
                     goal:"Create an easy to install shift timing assistant that uses digital and haptic feedback.",
@@ -111,8 +119,10 @@ const ProjectAPI = {
             type: "Product Design",
             theme: "Universe",
             src: "/img/as-card-thumbnail.png",
+            logo:"",
             intro:[
                 {
+                    banner:"",
                     overview:"This is a business card that was designed as a means for self promotion.",
                     problem:"Business cards are supposed to be something that helps people remember you. However, often times, people either lose business cards in the recess of their wallets or throw it away completely.",
                     goal:"Create a business card that represents myself and is so memorable that no one would ever throw it away, stash it, or lose it.",
@@ -136,8 +146,10 @@ const ProjectAPI = {
             type: "Product Design",
             theme: "Canvas",
             src: "/img/pct-thumbnail.png",
+            logo:"",
             intro:[
                 {
+                    banner:"",
                     overview:"The premium Change tool project consisted of a UI redesign to enhance usability.",
                     problem:"Agents originally had no functional way to compare changes in premium changes. This led to frustrated customers and agents. A new tool was proposed and piloted but it was developed no UX or UI design input. Although it was more helpful than having nothing, the UX and UI needed improvement.",
                     goal:"Improve usability by prioritizing information and creating a more accessible UI",
@@ -160,8 +172,10 @@ const ProjectAPI = {
             type: "Visual Design",
             theme: "Universe",
             src: "/img/okra-thumbnail.png",
+            logo:"",
             intro:[
                 {
+                    banner:"",
                     overview:"okra is a typeface design that combines elements of blackletter calligraphy and modern sans-serif typefaces.",
                     problem:"",
                     goal:"",
@@ -185,8 +199,10 @@ const ProjectAPI = {
             type: "Visual Design",
             theme: "Universe",
             src: "/img/mp-app-context-thumbnail.png",
+            logo:"",
             intro:[
                 {
+                    banner:"",
                     overview:"The MyPolicy mobile app is AAA's mobile native experience for viewing policy details. This is the logo design process for that app.",
                     problem:"AAA insurance and AAA club are different businesses despite sharing the same logomark. The app needed a logo that did not explicitly reference the AAA logo.",
                     goal:"Create a logo for the AAA MyPolicy Mobile App that stayed true to the brand in an abstract form.",
@@ -209,8 +225,10 @@ const ProjectAPI = {
             type: "Visual Design",
             theme: "Canvas",
             src: "/img/nyt-thumbnail.png",
+            logo:"",
             intro:[
                 {
+                    banner:"",
                     overview:"Using three days of the newspaper, this project explores improvements to the design system and experience of the classic publication: The New York Times.",
                     problem:"Deciphering which papers are new and which are old on a newsstand can be difficult if they are haphazardlously tossed around. The heirarchy within the paper is also confusing when so many columns of text are next to each other.",
                     goal:"Create a new system that makes identifying different days of the newspaper and stories within the newspaper easier.",
@@ -233,8 +251,10 @@ const ProjectAPI = {
             type: "Product Design",
             theme: "Canvas",
             src: "/img/vista-thumbnail.png",
+            logo:"",
             intro:[
                 {
+                    banner:"",
                     overview:"The Vista project effort consisted of a UI refresh for the enterprise portal.",
                     problem:"Vista was redesigned because the experience had become too cluttered over the years of adding features and pages. Both he information architecture and hierarchy weren't focused and made it an overall frustrating experience for users.",
                     goal:"Shift towards a modular layout to help focus users on prioritized content  as well as implementing elements of personalization within an enterprise-wide generic content dashboard.",
