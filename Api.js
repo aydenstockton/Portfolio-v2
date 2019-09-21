@@ -16,6 +16,7 @@ const ProjectAPI = {
                     overview:"The Q design effort entailed the end-to-end creation of a native app that started from a concept and ended at a fully branded product.",
                     problem:"Music is one of the most accessible ways to create and share experiences with people. Technology shouldn’t create barriers around shared experiences, it should foster them.",
                     goal:"Create a music app to remedy the inability to collaborate on music playlists across different streaming platforms and devices.",
+                    concept:"",
                     contributions:"Branding" + "Research" + "UX Design",
                     constraints:"Streaming rights of each platform"
                 }
@@ -47,6 +48,7 @@ const ProjectAPI = {
                     banner:"",
                     overview:"The Gravity Series is a 10 board series accompanied by 2 t-shirts and 3 sets of wheels. It was released for sale with the Wallride 32 release for Chocolate Skateboards.",
                     problem:"Every quarter, a new set of skateboard decks get released with their names. In some cases, designs can be individual and unrelated to each other. In most cases, like the gravity series, a system needs to be created where a singular design concept can be manipulated and applied across the entire team of pros.",
+                    goal:"",
                     concept:"I've always been fascinated with space, physics, and science in general. In skateboarding, understanding physics, cause and effect, and space are critical to performing the tricks you want to. For this design series, I created a visual system out of particle \"nets\" that simulated forms from warped lines in reference to the way gravity affects particles in space.",
                     contributions:"Concept" + "Graphics",
                     constraints:""
@@ -74,6 +76,7 @@ const ProjectAPI = {
                     overview:"The preference history project effort consisted of a new UX and UI to log policy changes in regards to paperless settings. The timeline established by Project Managers was 4 weeks for design and testing and 4 weeks for development",
                     problem:"Our existing table pattern was taking agents too long to find information. Because agents have hundreds of calls per day, finding information quickly is critical.",
                     goal:"Create a UI that would scale to future history logging tools within multiple AAA products.",
+                    concept:"",
                     contributions:"UX Design" + "Visual Design" + "Research",
                     constraints:"No search" + "No alerts" + "No pulling data out of chronological order"
                 }
@@ -100,6 +103,7 @@ const ProjectAPI = {
                     overview:"Swift Shift is a smart shift knob that is designed to enhance the driving experience by optimizing shift timing.",
                     problem:"Car enthusists love pushing their vehicles to the limit. For many, there is a desire to have an onboard shift timing assistant. For those of us who don't have the time, money, or knowledge to equip technical mods into our performance vehicles, there is no cheap solution to assist with shift timing.",
                     goal:"Create an easy to install shift timing assistant that uses digital and haptic feedback.",
+                    concept:"",
                     contributions:"Concept" + "Branding" + "Industrial Design" + "UX Design" + "Visual Design",
                     constraints:""
                 }
@@ -153,6 +157,7 @@ const ProjectAPI = {
                     overview:"The premium Change tool project consisted of a UI redesign to enhance usability.",
                     problem:"Agents originally had no functional way to compare changes in premium changes. This led to frustrated customers and agents. A new tool was proposed and piloted but it was developed no UX or UI design input. Although it was more helpful than having nothing, the UX and UI needed improvement.",
                     goal:"Improve usability by prioritizing information and creating a more accessible UI",
+                    concept:"",
                     contributions:"Visual Design" + "Research",
                     constraints:"No \"extreme\" UI enhancements" + "No search"
                 }

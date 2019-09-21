@@ -1,24 +1,23 @@
 import React from 'react';
-import ProjectRow from "./ProjectRow";
 
 
-const IntroBlocks = ({intro}) => (
-    layout.map((row, index) => (
-        <ProjectRow
-            title={row.title}
-            description={row.description}
-            image={row.img}
+const IntroBlockData = ({intro}) => (
+    intro.map((string, index) => (
+        <IntroBlock
+            overview={string.overview}
+            problem={string.problem}
+            goal={string.goal}
+            concept={string.concept}
+            contributions={string.contributions}
+            constraints={string.constraints}
         />
     ))
 )
 
-const ProjectIntro = ({name, overview, problem, goal, contributions, constraints}) => (
+const ProjectIntro = ({overview, problem, goal, concept, contributions, constraints}) => (
     <div>
         <div>
-            {name}
-        </div>
-        <div>
-            <div>
+            <IntroBlockData>
                 {overview &&
                     <overview>
                         {overview}
@@ -34,8 +33,12 @@ const ProjectIntro = ({name, overview, problem, goal, contributions, constraints
                         {goal}
                     </goal>
                 }
-            </div>
-            <div>
+                {concept &&
+                    <concept>
+                        {concept}
+                    </concept>}
+            </IntroBlockData>
+            <IntroBlockData>
                 {contributions &&
                     <contributions>
                         {contributions}
@@ -46,9 +49,9 @@ const ProjectIntro = ({name, overview, problem, goal, contributions, constraints
                         {constraints}
                     </constraints>
                 }
-            </div>
+            </IntroBlockData>
         </div>
     </div>
-)
+);
 
-export default ProjectIntro;
+export default ProjectIntro
