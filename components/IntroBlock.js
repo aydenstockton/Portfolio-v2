@@ -6,13 +6,26 @@ import React from 'react';
 >
 */
 
+const IntroBlockData = ({intro}) => (
+    intro.map((string, index) => (
+        <IntroBlock
+            overview={string.overview}
+            problem={string.problem}
+            goal={string.goal}
+            concept={string.concept}
+            contributions={string.contributions}
+            constraints={string.constraints}
+        />
+    ))
+)
+
 const IntroBlock = ({intro}) => (
     <div>
         <div>
-            {intro.key}
+            {intro.title}
         </div>
         <div>
-            {intro.value}
+            {intro.description}
         </div>
     </div>
 )

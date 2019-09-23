@@ -1,23 +1,10 @@
 import React from 'react';
-
-
-const IntroBlockData = ({intro}) => (
-    intro.map((string, index) => (
-        <IntroBlock
-            overview={string.overview}
-            problem={string.problem}
-            goal={string.goal}
-            concept={string.concept}
-            contributions={string.contributions}
-            constraints={string.constraints}
-        />
-    ))
-)
+import IntroBlock from "./IntroBlock.js"
 
 const ProjectIntro = ({overview, problem, goal, concept, contributions, constraints}) => (
     <div>
         <div>
-            <IntroBlockData>
+            <IntroBlock>
                 {overview &&
                     <overview>
                         {overview}
@@ -37,8 +24,8 @@ const ProjectIntro = ({overview, problem, goal, concept, contributions, constrai
                     <concept>
                         {concept}
                     </concept>}
-            </IntroBlockData>
-            <IntroBlockData>
+            </IntroBlock>
+            <IntroBlock>
                 {contributions &&
                     <contributions>
                         {contributions}
@@ -49,7 +36,7 @@ const ProjectIntro = ({overview, problem, goal, concept, contributions, constrai
                         {constraints}
                     </constraints>
                 }
-            </IntroBlockData>
+            </IntroBlock>
         </div>
     </div>
 );

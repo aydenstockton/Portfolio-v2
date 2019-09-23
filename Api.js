@@ -13,7 +13,12 @@ const ProjectAPI = {
             intro:[
                 {
                     banner:"",
-                    overview:"The Q design effort entailed the end-to-end creation of a native app that started from a concept and ended at a fully branded product.",
+                    overview:[
+                        {
+                            title:"Project Overview",
+                            description:"The Q design effort entailed the end-to-end creation of a native app that started from a concept and ended at a fully branded product.",
+                        }
+                        ],
                     problem:"Music is one of the most accessible ways to create and share experiences with people. Technology shouldn’t create barriers around shared experiences, it should foster them.",
                     goal:"Create a music app to remedy the inability to collaborate on music playlists across different streaming platforms and devices.",
                     concept:"",
