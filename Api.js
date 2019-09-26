@@ -8,7 +8,7 @@ const ProjectAPI = {
             id:"q-app",
             name: "Q Mobile App",
             type: "Product Design",
-            theme: "Universe",
+            theme: "universe",
             src: "/img/q-device-thumbnail.png",
             logo:"",
             introLeft:[
@@ -62,7 +62,7 @@ const ProjectAPI = {
             id: "gravity",
             name: "Gravity Series",
             type: "Visual Design",
-            theme: "Universe",
+            theme: "universe",
             src: "/img/choc-thumbnail.png",
             logo:"",
             intro:[
@@ -90,7 +90,7 @@ const ProjectAPI = {
             id:"preference-history",
             name: "Preference History",
             type: "Product Design",
-            theme: "Canvas",
+            theme: "canvas",
             src: "/img/p-hist-thumbnail.png",
             logo:"",
             intro:[
@@ -117,7 +117,7 @@ const ProjectAPI = {
             number: 4,
             name: "Swift Shift",
             type: "Product Design",
-            theme: "Universe",
+            theme: "universe",
             src: "/img/ss-thumbnail.png",
             logo:"",
             intro:[
@@ -144,7 +144,7 @@ const ProjectAPI = {
             number: 5,
             name: "Business Card",
             type: "Product Design",
-            theme: "Universe",
+            theme: "universe",
             src: "/img/as-card-thumbnail.png",
             logo:"",
             intro:[
@@ -171,7 +171,7 @@ const ProjectAPI = {
             number: 6,
             name: "Premium Change",
             type: "Product Design",
-            theme: "Canvas",
+            theme: "canvas",
             src: "/img/pct-thumbnail.png",
             logo:"",
             intro:[
@@ -198,7 +198,7 @@ const ProjectAPI = {
             number: 7,
             name: "okra",
             type: "Visual Design",
-            theme: "Universe",
+            theme: "universe",
             src: "/img/okra-thumbnail.png",
             logo:"",
             intro:[
@@ -225,7 +225,7 @@ const ProjectAPI = {
             number: 8,
             name: "MyPolicy Mobile App",
             type: "Visual Design",
-            theme: "Universe",
+            theme: "universe",
             src: "/img/mp-app-context-thumbnail.png",
             logo:"",
             intro:[
@@ -251,7 +251,7 @@ const ProjectAPI = {
             number: 9,
             name: "New York Times",
             type: "Visual Design",
-            theme: "Canvas",
+            theme: "canvas",
             src: "/img/nyt-thumbnail.png",
             logo:"",
             intro:[
@@ -277,7 +277,7 @@ const ProjectAPI = {
             number: 10,
             name: "Vista",
             type: "Product Design",
-            theme: "Canvas",
+            theme: "canvas",
             src: "/img/vista-thumbnail.png",
             logo:"",
             intro:[

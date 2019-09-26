@@ -17,43 +17,62 @@ const Rows = ({layout}) => (
 
 const ProjectIntro = ({intro}) => (
     <div>
-        <div intro="seperator">
-            <h1>{intro.name}</h1>
-            <Intro blocks={intro.introLeft}/>
-        </div>
-        <div intro="seperator">
-            <Intro blocks={intro.introRight}/>
+        <h1>{intro.name}</h1>
+        <div>
+            <div intro="seperator">
+                <Intro blocks={intro.introLeft}/>
+            </div>
+            <div intro="seperator">
+                <Intro blocks={intro.introRight}/>
+            </div>
         </div>
     </div>
 );
 
-
 // The Project looks up the project using the number parsed from
 // the URL's pathname. If no Project is found with the given
 // number, then a "Project not found" message is displayed.
-const Project = (props) => {
-  const project = ProjectAPI.get(
-    parseInt(props.match.params.project, 10)
-  );
 
-
-  if (!project) {
-    return <div>Sorry, but the Project was not found</div>
-  }
-  return (
-    <div id={project.id} theme={project.theme}>
-        <div project="intro">
-            <ProjectIntro intro={project}/>
-        </div>
-        <div className="project-page">
-            {
-                project.layout &&
+const ProjectWrapper = ({project}) => {
+    return (
+        <div id={project.id} theme={project.theme}>
+            <div project="intro">
+                <ProjectIntro intro={project}/>
+            </div>
+            <div className="project-page">
+                {
+                    project.layout &&
                     <Rows layout={project.layout} />
-            }
-          <Link to='/work'>Back</Link>
+                }
+                <Link to='/work'>Back</Link>
+            </div>
         </div>
-    </div>
-  )
+    )
+};
+
+class Project extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    componentDidMount() {
+
+    }
+
+    render() {
+        const project = ProjectAPI.get(
+          parseInt(this.props.match.params.project, 10)
+        );
+        let theme = "universe";
+        if(project.theme) {
+            theme = project.theme;
+        }
+        document.getElementsByTagName("BODY")[0].setAttribute("theme", theme);
+
+        return (
+            <ProjectWrapper project={project}/>
+        )
+    }
 };
 
 export default Project

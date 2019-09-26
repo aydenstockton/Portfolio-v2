@@ -1,12 +1,24 @@
-@define-mixin theme $color {
-    @mixin smalltitle $color;
-}
-@define-mixin smalltitle $color {
-        font-family: aktiv-grotesk-extended, sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        font-size: 56px;
-        color:$color;
-        line-height: 1.5;
-
+[project=intro] {
+    display: flex;
+    justify-content: center;
+    > div {
+        width: 80%;
+        max-width: 1000px;
+        h1 {
+            display: flex;
+            margin: 0 0 40px 0;
+            + div {
+                display: flex;
+                [intro=seperator] {
+                    &:first-child {
+                        flex: 1;
+                        margin-right: 80px;
+                    }
+                    &:last-child {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
 }
