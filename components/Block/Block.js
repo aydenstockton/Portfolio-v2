@@ -2,19 +2,19 @@ import React from 'react';
 import "./styles.pcss";
 
 const Title = ({title}) => (
-    <div>
+    <div type="title">
         {title}
     </div>
 )
 
 const Description = ({description}) => (
-    <div>
+    <div type="description">
         {description}
     </div>
 )
 
 const ListItem = ({item}) => (
-    <li>
+    <li type="list">
         {item}
     </li>
 )

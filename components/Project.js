@@ -26,16 +26,18 @@ const Project = (props) => {
     return <div>Sorry, but the Project was not found</div>
   }
   return (
-    <div className="project-page">
-      <h1>{project.name} (#{project.number})</h1>
-      <h2>Description: {project.description}</h2>
-
-        <ProjectIntro intro={project}/>
-        {
-            project.layout &&
-                <Rows layout={project.layout} />
-        }
-      <Link to='/work'>Back</Link>
+    <div>
+        <div project="intro">
+            <h1>{project.name}</h1>
+            <ProjectIntro intro={project}/>
+        </div>
+        <div className="project-page">
+            {
+                project.layout &&
+                    <Rows layout={project.layout} />
+            }
+          <Link to='/work'>Back</Link>
+        </div>
     </div>
   )
 };
