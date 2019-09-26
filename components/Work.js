@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import FullPortfolio from './FullPortfolio';
-import Project from './Project';
+import Project from './Project/Project';
 import {AnimatedSwitch, spring} from "react-router-transition";
 
 // The Work component matches one of two different routes

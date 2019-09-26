@@ -1,8 +1,9 @@
 import React from 'react';
-import ProjectAPI from '../Api';
+import ProjectAPI from '../../Api';
 import { Link } from 'react-router-dom';
-import ProjectRow from './ProjectRow';
-import ProjectIntro from "./ProjectIntro";
+import ProjectRow from '../ProjectRow';
+import Intro from "../Intro";
+import "./styles.pcss";
 
 const Rows = ({layout}) => (
     layout.map((row, index) => (
@@ -14,6 +15,19 @@ const Rows = ({layout}) => (
     ))
 )
 
+const ProjectIntro = ({intro}) => (
+    <div>
+        <div intro="seperator">
+            <h1>{intro.name}</h1>
+            <Intro blocks={intro.introLeft}/>
+        </div>
+        <div intro="seperator">
+            <Intro blocks={intro.introRight}/>
+        </div>
+    </div>
+);
+
+
 // The Project looks up the project using the number parsed from
 // the URL's pathname. If no Project is found with the given
 // number, then a "Project not found" message is displayed.
@@ -22,13 +36,13 @@ const Project = (props) => {
     parseInt(props.match.params.project, 10)
   );
 
+
   if (!project) {
     return <div>Sorry, but the Project was not found</div>
   }
   return (
-    <div>
+    <div id={project.id} theme={project.theme}>
         <div project="intro">
-            <h1>{project.name}</h1>
             <ProjectIntro intro={project}/>
         </div>
         <div className="project-page">

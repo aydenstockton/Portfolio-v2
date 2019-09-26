@@ -5,12 +5,13 @@ const ProjectAPI = {
     projects:[
         {
             number: 1,
+            id:"q-app",
             name: "Q Mobile App",
             type: "Product Design",
             theme: "Universe",
             src: "/img/q-device-thumbnail.png",
             logo:"",
-            intro:[
+            introLeft:[
                 {
                    title:"PROJECT OVERVIEW",
                    description:"The Q design effort entailed the end-to-end creation of a native app that started from a concept and ended at a fully branded product.",
@@ -22,7 +23,9 @@ const ProjectAPI = {
                 {
                     title:"THE GOAL",
                     description:"Create a music app to remedy the inability to collaborate on music playlists across different streaming platforms and devices.",
-                },
+                }
+            ],
+            introRight:[
                 {
                     title:"CONTRIBUTIONS",
                     description:"",
@@ -56,6 +59,7 @@ const ProjectAPI = {
         },
         {
             number: 2,
+            id: "gravity",
             name: "Gravity Series",
             type: "Visual Design",
             theme: "Universe",
@@ -83,6 +87,7 @@ const ProjectAPI = {
         },
         {
             number: 3,
+            id:"preference-history",
             name: "Preference History",
             type: "Product Design",
             theme: "Canvas",
