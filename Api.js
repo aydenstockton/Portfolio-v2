@@ -12,18 +12,29 @@ const ProjectAPI = {
             logo:"",
             intro:[
                 {
-                    banner:"",
-                    overview:[
-                        {
-                            title:"Project Overview",
-                            description:"The Q design effort entailed the end-to-end creation of a native app that started from a concept and ended at a fully branded product.",
-                        }
-                        ],
-                    problem:"Music is one of the most accessible ways to create and share experiences with people. Technology shouldn’t create barriers around shared experiences, it should foster them.",
-                    goal:"Create a music app to remedy the inability to collaborate on music playlists across different streaming platforms and devices.",
-                    concept:"",
-                    contributions:"Branding" + "Research" + "UX Design",
-                    constraints:"Streaming rights of each platform"
+                   title:"Project Overview",
+                   description:"The Q design effort entailed the end-to-end creation of a native app that started from a concept and ended at a fully branded product.",
+                },
+                {
+                    title:"The Problem",
+                    description:"Music is one of the most accessible ways to create and share experiences with people. Technology shouldn’t create barriers around shared experiences, it should foster them.",
+                },
+                {
+                    title:"The Goal",
+                    description:"Create a music app to remedy the inability to collaborate on music playlists across different streaming platforms and devices.",
+                },
+                {
+                    title:"Contributions",
+                    description:"",
+                    list: [
+                        "Branding",
+                        "Research",
+                        "UX Design"
+                    ]
+                },
+                {
+                    title:"Constraints",
+                    description:"Streaming rights of each platform",
                 }
             ],
             layout:[

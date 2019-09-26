@@ -1,10 +1,13 @@
 import React from 'react';
-import IntroBlock from "./IntroBlock.js"
+import IntroBlock from "./IntroBlock.js";
+import Intro from './Intro.js'
 
-const ProjectIntro = ({overview, problem, goal, concept, contributions, constraints}) => (
+
+const ProjectIntro = ({intro, overview, problem, goal, concept, contributions, constraints}) => (
     <div>
         <div>
-            <IntroBlock>
+            <Intro blocks={intro.intro}/>
+           <IntroBlock intro={intro}>
                 {overview &&
                     <overview>
                         {overview}
@@ -25,7 +28,7 @@ const ProjectIntro = ({overview, problem, goal, concept, contributions, constrai
                         {concept}
                     </concept>}
             </IntroBlock>
-            <IntroBlock>
+            <IntroBlock intro={intro}>
                 {contributions &&
                     <contributions>
                         {contributions}

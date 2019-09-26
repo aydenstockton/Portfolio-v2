@@ -30,7 +30,7 @@ const Project = (props) => {
       <h1>{project.name} (#{project.number})</h1>
       <h2>Description: {project.description}</h2>
 
-        <ProjectIntro/>
+        <ProjectIntro intro={project}/>
         {
             project.layout &&
                 <Rows layout={project.layout} />

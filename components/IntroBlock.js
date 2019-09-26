@@ -7,27 +7,21 @@ import React from 'react';
 */
 
 const IntroBlockData = ({intro}) => (
-    intro.map((string, index) => (
-        <IntroBlock
-            overview={string.overview}
-            problem={string.problem}
-            goal={string.goal}
-            concept={string.concept}
-            contributions={string.contributions}
-            constraints={string.constraints}
-        />
-    ))
-)
-
-const IntroBlock = ({intro}) => (
     <div>
         <div>
-            {intro.title}
+             {intro.title}
         </div>
         <div>
             {intro.description}
         </div>
     </div>
+)
+
+const IntroBlock = ({intro}) => (
+    <IntroBlockData
+        intro={intro}
+    />
+
 )
 
 export default IntroBlock
