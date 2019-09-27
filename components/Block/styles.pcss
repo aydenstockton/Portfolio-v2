@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url("https://use.typekit.net/iwr7rnl.css");
 @import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
-
+@import url("https://use.typekit.net/iwr7rnl.css");
 
 
 [theme=universe] {
@@ -21,23 +21,25 @@
     margin-bottom: 56px;
     position: relative;
     [type=title] {
-        font-family: aktiv-grotesk, sans-serif;
-        font-weight: 600;
-        font-size: 12px;
+        font-family: ibm-plex-sans, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 16px;
         margin-bottom: 32px;
         letter-spacing: 0.15em;
+        opacity: 0.9;
 
         &:after {
             content: "";
-            border-bottom: 2px solid #FBD138;
+            border-bottom: 1px solid;
             position: absolute;
             width: 40px;
             left: 0;
-            top: 35px;
+            top: 39px;
         }
     }
     ul {
-        padding-left: 21px;
+        padding-left: 0;
         margin: 0;
     }
     li {
@@ -45,7 +47,7 @@
         font-size: 16px;
         font-weight: 400;
         font-style: normal;
-        list-style-type: disc;
+        list-style-type: none;
     }
     [type=description] {
         font-family: "Space Mono", monospace;
@@ -60,7 +62,87 @@
         font-size: 16px;
         font-weight: 400;
         font-style: normal;
-        list-style-type: disc;
+        list-style-type: none;
         opacity: 0.8;
+    }
+}
+
+#q-app {
+    [type=title] {
+        &:after {
+            border-color: #FBD138;
+        }
+    }
+}
+
+#gravity {
+    [type=title] {
+        &:after {
+            border-image: linear-gradient(90deg, palevioletred, lightsalmon, deepskyblue) 1;
+        }
+    }
+}
+
+#preference-history {
+    [type=title] {
+        &:after {
+            border-color: #1778D3;
+        }
+    }
+}
+
+#swift-shift {
+    [type=title] {
+        &:after {
+            border-color: red;
+        }
+    }
+}
+
+#as-card {
+    [type=title] {
+        &:after {
+            border-color: #898F83;
+        }
+    }
+}
+
+#premium-change-tool {
+    [type=title] {
+        &:after {
+            border-image: linear-gradient(90deg, #1778d3, #0096d6) 1;
+        }
+    }
+}
+
+#okra {
+    [type=title] {
+        &:after {
+            border-color: white;
+        }
+    }
+}
+
+#mp-mobile-app {
+     [type=title] {
+         &:after {
+             border-image: linear-gradient(90deg, #1778d3, red) 1;
+         }
+     }
+ }
+
+#nyt {
+    [type=title] {
+        &:after {
+            border-image: linear-gradient(90deg, #912978, #F37578) 1;
+        }
+    }
+}
+
+#vista {
+    [type=title] {
+        &:after {
+            border-color: #0096D6;
+        }
     }
 }
