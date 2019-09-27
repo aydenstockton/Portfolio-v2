@@ -115,6 +115,7 @@ const ProjectAPI = {
         },
         {
             number: 4,
+            id:"swift-shift",
             name: "Swift Shift",
             type: "Product Design",
             theme: "universe",
@@ -142,6 +143,7 @@ const ProjectAPI = {
         },
         {
             number: 5,
+            id:"as-card",
             name: "Business Card",
             type: "Product Design",
             theme: "universe",
@@ -169,6 +171,7 @@ const ProjectAPI = {
         },
         {
             number: 6,
+            id:"premium-change-tool",
             name: "Premium Change",
             type: "Product Design",
             theme: "canvas",
@@ -196,6 +199,7 @@ const ProjectAPI = {
         },
         {
             number: 7,
+            id:"okra",
             name: "okra",
             type: "Visual Design",
             theme: "universe",
@@ -223,6 +227,7 @@ const ProjectAPI = {
         },
         {
             number: 8,
+            id:"mp-mobileapp",
             name: "MyPolicy Mobile App",
             type: "Visual Design",
             theme: "universe",
@@ -249,6 +254,7 @@ const ProjectAPI = {
         },
         {
             number: 9,
+            id:"nyt",
             name: "New York Times",
             type: "Visual Design",
             theme: "canvas",
@@ -275,6 +281,7 @@ const ProjectAPI = {
         },
         {
             number: 10,
+            id:"vista",
             name: "Vista",
             type: "Product Design",
             theme: "canvas",
