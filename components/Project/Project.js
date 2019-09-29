@@ -29,13 +29,13 @@ const ProjectIntro = ({intro}) => (
     </div>
 );
 
-const Hero = ({project}) => (
-    <div>
+const Hero = ({logo, hero}) => (
+    <div project="hero">
         <div>
-            <svg>{project.logo}</svg>
+            <img src={logo}/>
         </div>
         <div>
-            <img src={project.hero}/>
+            <img src={hero}/>
         </div>
     </div>
 );
@@ -47,9 +47,13 @@ const Hero = ({project}) => (
 const ProjectWrapper = ({project}) => {
     return (
         <div id={project.id} theme={project.theme}>
-            <div project="intro">
-                <Hero />
-                <ProjectIntro intro={project}/>
+            <div intro="wrapper">
+                <div>
+                    <Hero hero={project.hero} logo={project.logo}/>
+                </div>
+                <div project="intro">
+                    <ProjectIntro intro={project}/>
+                </div>
             </div>
             <div className="project-page">
                 {

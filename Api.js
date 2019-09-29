@@ -10,8 +10,8 @@ const ProjectAPI = {
             type: "Product Design",
             theme: "universe",
             src: "/img/q-device-thumbnail.png",
-            logo:"",
-            hero:"",
+            logo:"/img/q-logo.svg",
+            hero:"/img/screen-tiles-web.png",
             introLeft:[
                 {
                    title:"PROJECT OVERVIEW",

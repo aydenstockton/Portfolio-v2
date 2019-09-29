@@ -21,11 +21,47 @@
     }
 }
 
+[intro=wrapper] {
+    position: relative;
+    top: -26px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+[project=hero] {
+    height: 408px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    > div:first-child {
+        width: 248px;
+        height: 248px;
+        position: absolute;
+        z-index: 10;
+    }
+    > div:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > img {
+            width: 150%;
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            opacity: 0.5;
+        }
+    }
+}
+
 [project=intro] {
     display: flex;
     justify-content: center;
     padding: 64px 0;
     width: 100vw;
+    position: relative;
+    top: -22px;
     > div {
         width: 80%;
         max-width: 1000px;
