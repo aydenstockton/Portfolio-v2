@@ -29,6 +29,17 @@ const ProjectIntro = ({intro}) => (
     </div>
 );
 
+const Hero = ({project}) => (
+    <div>
+        <div>
+            <svg>{project.logo}</svg>
+        </div>
+        <div>
+            <img src={project.hero}/>
+        </div>
+    </div>
+);
+
 // The Project looks up the project using the number parsed from
 // the URL's pathname. If no Project is found with the given
 // number, then a "Project not found" message is displayed.
@@ -37,6 +48,7 @@ const ProjectWrapper = ({project}) => {
     return (
         <div id={project.id} theme={project.theme}>
             <div project="intro">
+                <Hero />
                 <ProjectIntro intro={project}/>
             </div>
             <div className="project-page">

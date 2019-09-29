@@ -11,6 +11,7 @@ const ProjectAPI = {
             theme: "universe",
             src: "/img/q-device-thumbnail.png",
             logo:"",
+            hero:"",
             introLeft:[
                 {
                    title:"PROJECT OVERVIEW",
@@ -65,6 +66,7 @@ const ProjectAPI = {
             theme: "universe",
             src: "/img/choc-thumbnail.png",
             logo:"",
+            hero:"",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -106,6 +108,7 @@ const ProjectAPI = {
             theme: "canvas",
             src: "/img/p-hist-thumbnail.png",
             logo:"",
+            hero:"",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -156,6 +159,7 @@ const ProjectAPI = {
             theme: "universe",
             src: "/img/ss-thumbnail.png",
             logo:"",
+            hero:"",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -199,6 +203,7 @@ const ProjectAPI = {
             theme: "universe",
             src: "/img/as-card-thumbnail.png",
             logo:"",
+            hero:"",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -244,6 +249,7 @@ const ProjectAPI = {
             theme: "canvas",
             src: "/img/pct-thumbnail.png",
             logo:"",
+            hero:"",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -292,6 +298,7 @@ const ProjectAPI = {
             theme: "universe",
             src: "/img/okra-thumbnail.png",
             logo:"",
+            hero:"",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -328,6 +335,7 @@ const ProjectAPI = {
             theme: "universe",
             src: "/img/mp-app-context-thumbnail.png",
             logo:"",
+            hero:"",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -368,6 +376,7 @@ const ProjectAPI = {
             theme: "universe",
             src: "/img/nyt-thumbnail.png",
             logo:"",
+            hero:"",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -415,6 +424,7 @@ const ProjectAPI = {
             theme: "canvas",
             src: "/img/vista-thumbnail.png",
             logo:"",
+            hero:"",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
