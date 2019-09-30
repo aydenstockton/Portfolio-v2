@@ -31,9 +31,9 @@ const ProjectAPI = {
                     title:"CONTRIBUTIONS",
                     description:"",
                     list: [
+                        "UX Design",
                         "Branding",
-                        "Research",
-                        "UX Design"
+                        "Research"
                     ]
                 },
                 {
@@ -65,8 +65,8 @@ const ProjectAPI = {
             type: "Visual Design",
             theme: "universe",
             src: "/img/choc-thumbnail.png",
-            logo:"",
-            hero:"",
+            logo:"/img/chocolate-box-logo-color.svg",
+            hero:"/img/chocolate-hero-2.png",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -107,8 +107,8 @@ const ProjectAPI = {
             type: "Product Design",
             theme: "canvas",
             src: "/img/p-hist-thumbnail.png",
-            logo:"",
-            hero:"",
+            logo:"/img/aaa-logo-color.svg",
+            hero:"/img/pref-hist-hero-web.png",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -158,8 +158,8 @@ const ProjectAPI = {
             type: "Product Design",
             theme: "universe",
             src: "/img/ss-thumbnail.png",
-            logo:"",
-            hero:"",
+            logo:"/img/ss-logo.svg",
+            hero:"/img/ss-hero-web.png",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -202,8 +202,8 @@ const ProjectAPI = {
             type: "Product Design",
             theme: "universe",
             src: "/img/as-card-thumbnail.png",
-            logo:"",
-            hero:"",
+            logo:"/img/as-card-logo.svg",
+            hero:"/img/as-card-tile.png",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -248,8 +248,8 @@ const ProjectAPI = {
             type: "Product Design",
             theme: "canvas",
             src: "/img/pct-thumbnail.png",
-            logo:"",
-            hero:"",
+            logo:"/img/aaa-logo-color.svg",
+            hero:"/img/pct-hero-web.png",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -297,8 +297,8 @@ const ProjectAPI = {
             type: "Visual Design",
             theme: "universe",
             src: "/img/okra-thumbnail.png",
-            logo:"",
-            hero:"",
+            logo:"/img/okra-logo.png",
+            hero:"/img/okra-hero-web.png",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -323,7 +323,7 @@ const ProjectAPI = {
                     type:"row",
                     title:"",
                     description:"",
-                    img:"/img/0.png"
+                    img:"/img/okra-dimension.png"
                 },
             ]
         },
@@ -334,7 +334,7 @@ const ProjectAPI = {
             type: "Visual Design",
             theme: "universe",
             src: "/img/mp-app-context-thumbnail.png",
-            logo:"",
+            logo:"/img/mp-app-logo.svg",
             hero:"",
             introLeft:[
                 {
@@ -375,8 +375,8 @@ const ProjectAPI = {
             type: "Visual Design",
             theme: "universe",
             src: "/img/nyt-thumbnail.png",
-            logo:"",
-            hero:"",
+            logo:"/img/nyt-t-logo.svg",
+            hero:"/img/nyt-triple.png",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -423,7 +423,7 @@ const ProjectAPI = {
             type: "Product Design",
             theme: "canvas",
             src: "/img/vista-thumbnail.png",
-            logo:"",
+            logo:"/img/aaa-logo-color.svg",
             hero:"",
             introLeft:[
                 {

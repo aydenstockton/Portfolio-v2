@@ -36,18 +36,22 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
+    width: 100vw;
     > div:first-child {
-        width: 248px;
-        height: 248px;
+        width: 200px;
+        height: 216px;
         position: absolute;
         z-index: 10;
+        > img {
+            width: 100%
+        }
     }
     > div:last-child {
         display: flex;
         justify-content: center;
         align-items: center;
         > img {
-            width: 150%;
+            width: 111%;
             filter: blur(8px);
             -webkit-filter: blur(8px);
             opacity: 0.5;
@@ -61,7 +65,7 @@
     padding: 64px 0;
     width: 100vw;
     position: relative;
-    top: -22px;
+    top: -24px;
     > div {
         width: 80%;
         max-width: 1000px;

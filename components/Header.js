@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom';
 const Header = () => (
   <header>
     <nav>
+      <div>
+         <img src="/img/ayden-stockton-logo.svg"/>
+      </div>
       <ul>
         <li><Link to='/'>HOME</Link></li>
         <li><Link to='/work'>WORK</Link></li>
