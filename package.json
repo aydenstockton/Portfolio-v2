@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "img": "^3.0.3",
-    "react-router-scroll-top": "^0.2.1"
+    "react-router-scroll-top": "^0.2.1",
+    "react-scroll-parallax": "^2.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
