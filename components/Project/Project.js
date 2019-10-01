@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import ProjectRow from '../ProjectRow';
 import Intro from "../Intro";
 import "./styles.pcss";
+import { Parallax } from 'react-scroll-parallax';
 
 const Rows = ({layout}) => (
     layout.map((row, index) => (
@@ -35,7 +36,9 @@ const Hero = ({logo, hero}) => (
             <img src={logo}/>
         </div>
         <div>
-            <img src={hero}/>
+            <Parallax className="banner" y={[-20, 20]} tagOuter="figure">
+                <img src={hero}/>
+            </Parallax>
         </div>
     </div>
 );
@@ -46,7 +49,7 @@ const Hero = ({logo, hero}) => (
 
 const ProjectWrapper = ({project}) => {
     return (
-        <div id={project.id} theme={project.theme}>
+        <div id={project.id} theme={project.theme} type="project">
             <div intro="wrapper">
                 <div>
                     <Hero hero={project.hero} logo={project.logo}/>
