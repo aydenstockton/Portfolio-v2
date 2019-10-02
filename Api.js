@@ -39,7 +39,7 @@ const ProjectAPI = {
                 {
                     title:"CONSTRAINTS",
                     list: [
-                        "Streaming rights of each platform",
+                        "Creating a viable product that works around streaming ownership",
                     ]
                 }
             ],
@@ -94,9 +94,19 @@ const ProjectAPI = {
             layout:[
                 {
                     type:"row",
-                    title:"",
-                    description:"",
-                    img:"/img/0.png"
+                    img:"/img/chocolate-lineup-1.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/chocolate-lineup-2.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/chocolate-shirt-wheels.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/chocolate-insta.png"
                 },
             ]
         },
@@ -189,9 +199,39 @@ const ProjectAPI = {
             layout:[
                 {
                     type:"row",
-                    title:"",
-                    description:"",
-                    img:"/img/0.png"
+                    img:"/img/ss-gear-indicator.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/ss-gear-interface.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/ss-shifting-ux.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/ss-vibrate-feedback.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/ss-profile-settings.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/ss-menu-map.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/ss-construction.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/ss-design-options.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/ss-render-context.png"
                 },
             ]
         },
@@ -235,9 +275,15 @@ const ProjectAPI = {
             layout:[
                 {
                     type:"row",
-                    title:"",
-                    description:"",
-                    img:"/img/0.png"
+                    img:"/img/as-card.gif"
+                },
+                {
+                    type:"row",
+                    img:"/img/as-card-triple.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/as-card-tile.png"
                 },
             ]
         },
@@ -321,9 +367,15 @@ const ProjectAPI = {
             layout:[
                 {
                     type:"row",
-                    title:"",
-                    description:"",
                     img:"/img/okra-dimension.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/okra-sample.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/okra-full-typeface.png"
                 },
             ]
         },
@@ -362,9 +414,25 @@ const ProjectAPI = {
             layout:[
                 {
                     type:"row",
-                    title:"",
-                    description:"",
-                    img:"/img/0.png"
+                    img:"/img/mp-app-sketches.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/mp-app-logosheet.png"
+                },
+                {
+                    type:"row",
+                    title:"Logo Direction",
+                    description:"The team explored a lot of possibilities with different forms. I spent my time pushing the most basic element of the AAA logo, the orbit. After manipulating the primitive semi-circle form in various iterations, the team found this final form to be the most conceptually compelling. It abstractly relates to the AAA logo with three orbits to form a shield that symbolizes coverage and protection.",
+                    img:"/img/mp-app-grid.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/mp-app-iconsheet.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/mp-app-iphonex.png"
                 },
             ]
         },
@@ -410,10 +478,25 @@ const ProjectAPI = {
             layout:[
                 {
                     type:"row",
-                    title:"",
-                    description:"",
-                    img:"/img/0.png"
+                    img:"/img/nyt-wed.png"
                 },
+                {
+                    type:"row",
+                    img:"/img/nyt-thurs.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/nyt-fri.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/nyt-dutch.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/nyt-triple.png"
+                },
+
             ]
         },
         {

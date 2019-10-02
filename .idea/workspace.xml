@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50606b24-a584-4535-955a-93d6b85c925c" name="Default Changelist" comment="" />
+    <list default="true" id="50606b24-a584-4535-955a-93d6b85c925c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/Api.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,21 +44,11 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/img/choc-thumbnail.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/img/okra-full-typeface.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="326" column="18" selection-start-line="326" selection-start-column="18" selection-end-line="326" selection-end-column="18" />
+            <state relative-caret-position="10395">
+              <caret line="495" column="31" selection-start-line="495" selection-start-column="31" selection-end-line="495" selection-end-column="31" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -149,7 +141,6 @@
         <option value="$PROJECT_DIR$/components/Project.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/components/Header.js" />
-        <option value="$PROJECT_DIR$/Api.js" />
         <option value="$PROJECT_DIR$/components/App.js" />
         <option value="$PROJECT_DIR$/components/Block/styles.pcss" />
         <option value="$PROJECT_DIR$/components/Main.js" />
@@ -158,6 +149,7 @@
         <option value="$PROJECT_DIR$/components/Project/Project.js" />
         <option value="$PROJECT_DIR$/styles.pcss" />
         <option value="$PROJECT_DIR$/components/Project/styles.pcss" />
+        <option value="$PROJECT_DIR$/Api.js" />
       </list>
     </option>
   </component>
@@ -335,7 +327,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109203000" />
+    <option name="totallyTimeSpent" value="112474000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -502,16 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="326" column="18" selection-start-line="326" selection-start-column="18" selection-end-line="326" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/img/aaa-logo-color.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -624,6 +606,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/img/okra-full-typeface.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/as-card-triple.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/nyt-wed.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10395">
+          <caret line="495" column="31" selection-start-line="495" selection-start-column="31" selection-end-line="495" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
