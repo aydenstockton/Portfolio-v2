@@ -41,18 +41,22 @@ const bounceTransition = {
 };
 
 
-const Work = () => (
-    <AnimatedSwitch
-        atEnter={bounceTransition.atEnter}
-        atLeave={bounceTransition.atLeave}
-        atActive={bounceTransition.atActive}
-        mapStyles={mapStyles}
-        className="switch-wrapper"
-    >
-    <Route exact path='/work' component={FullPortfolio}/>
-    <Route path='/work/:project' component={Project}/>
-  </AnimatedSwitch>
-)
+const Work = () => {
+    document.getElementsByTagName("BODY")[0].setAttribute("theme", "universe");
+
+    return (
+        <AnimatedSwitch
+            atEnter={bounceTransition.atEnter}
+            atLeave={bounceTransition.atLeave}
+            atActive={bounceTransition.atActive}
+            mapStyles={mapStyles}
+            className="switch-wrapper"
+        >
+            <Route exact path='/work' component={FullPortfolio}/>
+            <Route path='/work/:project' component={Project}/>
+        </AnimatedSwitch>
+    )
+}
 
 
 export default Work

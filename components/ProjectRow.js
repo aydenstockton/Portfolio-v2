@@ -11,20 +11,22 @@ import Fade from 'react-reveal';
 const ProjectRow = ({title, description, image}) => (
     <div className="project-piece">
         <Fade>
-            <div className="project-description">
-                <div>
-                    {title &&
+            {(title || description) &&
+                <div className="project-description">
+                    <div>
+                        {title &&
                         <title>
                             {title}
                         </title>
-                    }
-                    {description &&
+                        }
+                        {description &&
                         <p>
                             {description}
                         </p>
-                    }
+                        }
+                    </div>
                 </div>
-            </div>
+            }
         </Fade>
         <Fade bottom>
             {image &&

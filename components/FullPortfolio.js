@@ -2,7 +2,6 @@ import React from 'react'
 import ProjectAPI from '../Api'
 import Thumbnail from './Thumbnail'
 
-
 function Thumbnails(props) {
     // const thumbs = ProjectAPI.all();
     const thumbItems = props.thumbs.map((thumb) =>
@@ -15,8 +14,12 @@ function Thumbnails(props) {
 
 // The FullPortfolio iterates over all of the projects and creates
 // a link to their project page.
-const FullPortfolio = () => (
-    <Thumbnails thumbs={ProjectAPI.all()}/>
-)
+const FullPortfolio = () => {
+    document.getElementsByTagName("BODY")[0].setAttribute("theme", "universe");
+
+    return (
+        <Thumbnails thumbs={ProjectAPI.all()}/>
+    )
+}
 
 export default FullPortfolio
