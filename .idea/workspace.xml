@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50606b24-a584-4535-955a-93d6b85c925c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Project/Project.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Project/Project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProjectRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProjectRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,17 +26,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/Block/styles.pcss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
+            <state relative-caret-position="700">
               <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/ProjectRow.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/Project/Project.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            <state relative-caret-position="269">
+              <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -40,15 +54,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/img/choc-thumbnail.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/components/IntroBlock.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/Intro.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10395">
-              <caret line="495" column="31" selection-start-line="495" selection-start-column="31" selection-end-line="495" selection-end-column="31" />
+            <state relative-caret-position="498">
+              <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -132,11 +162,9 @@
         <option value="$PROJECT_DIR$/components/FullPortfolio.js" />
         <option value="$PROJECT_DIR$/node_modules/ProjectRow.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" />
-        <option value="$PROJECT_DIR$/components/ProjectRow.js" />
         <option value="$PROJECT_DIR$/components/IntroText.js" />
         <option value="$PROJECT_DIR$/components/Intro.js" />
         <option value="$PROJECT_DIR$/components/Block/Block.js" />
-        <option value="$PROJECT_DIR$/components/IntroBlock.js" />
         <option value="$PROJECT_DIR$/components/ProjectIntro.js" />
         <option value="$PROJECT_DIR$/components/Project.js" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -146,10 +174,12 @@
         <option value="$PROJECT_DIR$/components/Main.js" />
         <option value="$PROJECT_DIR$/components/Work.js" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/components/Project/Project.js" />
         <option value="$PROJECT_DIR$/styles.pcss" />
         <option value="$PROJECT_DIR$/components/Project/styles.pcss" />
         <option value="$PROJECT_DIR$/Api.js" />
+        <option value="$PROJECT_DIR$/components/IntroBlock.js" />
+        <option value="$PROJECT_DIR$/components/ProjectRow.js" />
+        <option value="$PROJECT_DIR$/components/Project/Project.js" />
       </list>
     </option>
   </component>
@@ -208,28 +238,23 @@
               <item name="boilerplate-simple-designer" type="b2602c69:ProjectViewProjectNode" />
               <item name="boilerplate-simple-designer" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Block" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boilerplate-simple-designer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boilerplate-simple-designer" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="boilerplate-simple-designer" type="b2602c69:ProjectViewProjectNode" />
               <item name="boilerplate-simple-designer" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boilerplate-simple-designer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boilerplate-simple-designer" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="boilerplate-simple-designer" type="b2602c69:ProjectViewProjectNode" />
               <item name="boilerplate-simple-designer" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boilerplate-simple-designer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boilerplate-simple-designer" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -327,7 +352,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112474000" />
+    <option name="totallyTimeSpent" value="114945000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -435,23 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/IntroBlock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Intro.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/Block/Block.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
@@ -544,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/ProjectRow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/Work.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3">
@@ -571,32 +572,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Block/styles.pcss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/Project/styles.pcss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="599">
           <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Project/Project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/img/choc-thumbnail.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/img/choc-thumbnail.png">
       <provider selected="true" editor-type-id="images" />
@@ -613,12 +594,56 @@
     <entry file="file://$PROJECT_DIR$/public/img/nyt-wed.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/dist/img/choc-thumbnail.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10395">
-          <caret line="495" column="31" selection-start-line="495" selection-start-column="31" selection-end-line="495" selection-end-column="31" />
+        <state relative-caret-position="498">
+          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Block/styles.pcss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/IntroBlock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Intro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/ProjectRow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Project/Project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

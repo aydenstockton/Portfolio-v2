@@ -55,6 +55,22 @@ const ProjectAPI = {
                     title:"Branding the Experience",
                     description:"Once the flow was refined, the visual design and branding process started as small iterations on a few wireframes to help me understand which direction I wanted to go with the brand. After getting a few iterations out of the way, I took a step back and did a deeper branding study on what exactly the product is and how it should feel.",
                     img:"/img/q-branding.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/q-mm-quote.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/q-moodboard.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/q-icons.png"
+                },
+                {
+                    type:"row",
+                    img:"/img/q-overview.png"
                 }
             ]
         },

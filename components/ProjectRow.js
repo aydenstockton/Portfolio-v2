@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Fade from 'react-reveal';
 
 /*
        <ProjectRow
@@ -10,23 +10,29 @@ import React from 'react';
 */
 const ProjectRow = ({title, description, image}) => (
     <div className="project-piece">
-        <div className="project-description">
-            <div>
-                {title &&
-                    <title>
-                        {title}
-                    </title>
-                }
-                <p>
-                    {description}
-                </p>
+        <Fade>
+            <div className="project-description">
+                <div>
+                    {title &&
+                        <title>
+                            {title}
+                        </title>
+                    }
+                    {description &&
+                        <p>
+                            {description}
+                        </p>
+                    }
+                </div>
             </div>
-        </div>
-        {image &&
-            <div className="project-image">
-                <img src={image}/>
-            </div>
-        }
+        </Fade>
+        <Fade bottom>
+            {image &&
+                <div className="project-image">
+                    <img src={image}/>
+                </div>
+            }
+        </Fade>
     </div>
 )
 

@@ -5,6 +5,8 @@ import ProjectRow from '../ProjectRow';
 import Intro from "../Intro";
 import "./styles.pcss";
 import { Parallax } from 'react-scroll-parallax';
+import Fade from 'react-reveal';
+
 
 const Rows = ({layout}) => (
     layout.map((row, index) => (
@@ -18,22 +20,28 @@ const Rows = ({layout}) => (
 
 const ProjectIntro = ({intro}) => (
     <div>
-        <h1>{intro.name}</h1>
-        <div>
-            <div intro="seperator">
-                <Intro blocks={intro.introLeft}/>
+        <Fade bottom>
+            <h1>{intro.name}</h1>
+        </Fade>
+        <Fade bottom cascade>
+            <div>
+                <div intro="seperator">
+                    <Intro blocks={intro.introLeft}/>
+                </div>
+                <div intro="seperator">
+                    <Intro blocks={intro.introRight}/>
+                </div>
             </div>
-            <div intro="seperator">
-                <Intro blocks={intro.introRight}/>
-            </div>
-        </div>
+        </Fade>
     </div>
 );
 
 const Hero = ({logo, hero}) => (
     <div project="hero">
         <div>
-            <img src={logo}/>
+            <Fade top>
+                <img src={logo}/>
+            </Fade>
         </div>
         <div>
             <Parallax className="banner" y={[-20, 20]} tagOuter="figure">
