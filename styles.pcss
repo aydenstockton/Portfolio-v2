@@ -70,6 +70,9 @@ body {
 
           div {
             width: 168px;
+            svg {
+              fill: white;
+            }
           }
 
           ul {
@@ -223,5 +226,51 @@ body {
 body {
   &[theme=canvas] {
     background-color: #EDEDED;
+    header {
+      background-image: linear-gradient(rgba(237, 237, 237, 1) 80%, rgba(237, 237, 237, 0));
+    }
   }
+}
+
+body & [theme=canvas] {
+  > header {
+    background-image: linear-gradient(rgba(237, 237, 237, 1) 80%, rgba(237, 237, 237, 0));
+  }
+}
+
+[theme=canvas] {
+  div {
+    > title {
+      color: black;
+    }
+  }
+}
+
+
+.Welcome {
+  div {
+    width: 100vw;
+    animation: ticker 25s 3.5s linear infinite backwards;
+    position: absolute;
+    .cls-1 {
+      isolation: isolate;
+      fill: none;
+      stroke: #fff;
+    }
+    .cls-3 {
+      fill: #fff;
+      &:hover {
+        animation: none;
+      }
+    }
+  }
+}
+
+@keyframes ticker{
+  from{transform: translateX(100vw);}
+  to{transform: translateX(-100vw);}
+}
+@keyframes start{
+  from{transform: translateX(0);}
+  to{transform: translateX(-200%);}
 }

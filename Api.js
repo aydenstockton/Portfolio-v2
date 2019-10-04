@@ -69,6 +69,11 @@ const ProjectAPI = {
                     img:"/img/q-icons.png"
                 },
                 {
+                   type: "row",
+                   title: "Disposability",
+                   description: "The main constraint of this project would be getting the approval of different streaming services to use their streaming APIs. The idea is that Q removes playlists are no longer playable after the playlist has been idle for a set amount of time. Any liked songs from past playlists get saved in a user profile, but they only serve as links to the streaming platform as no songs are saved within Q",
+                },
+                {
                     type:"row",
                     img:"/img/q-overview.png"
                 }
@@ -531,11 +536,11 @@ const ProjectAPI = {
                 },
                 {
                     title:"THE PROBLEM",
-                    description:"Vista was redesigned because the experience had become too cluttered over the years of adding features and pages. Both he information architecture and hierarchy weren't focused and made it an overall frustrating experience for users.",
+                    description:"Vista was redesigned because the experience had become too cluttered over the years of adding features and pages. Both the information architecture and hierarchy weren't focused and made it an overall frustrating experience for users.",
                 },
                 {
                     title:"THE GOAL",
-                    description:"Shift towards a modular layout to help focus users on prioritized content  as well as implementing elements of personalization within an enterprise-wide generic content dashboard.",
+                    description:"Shift towards a modular layout to help focus users on prioritized content as well as implementing elements of personalization within an enterprise-wide generic content dashboard.",
                 }
             ],
             introRight:[
@@ -558,9 +563,9 @@ const ProjectAPI = {
             layout:[
                 {
                     type:"row",
-                    title:"",
-                    description:"",
-                    img:"/img/0.png"
+                    title:"Shift Towards Modularity",
+                    description:"Before joining the project, other members of the UX team had done an initial redesign of the page that shifted towards a modular format. Although the design was an improvement, it did not meet all of the requirements and would not be technically feasible. I took inspiration from the redesign and worked with stakeholders and developers to come up with a modular approach that met all the requirements and would be possible to build within scope.",
+                    img:"/img/vista-v2.png"
                 },
             ]
         },
