@@ -46,6 +46,10 @@ const ProjectAPI = {
             layout:[
                 {
                     type:"row",
+                    video:"/img/q-explanation-1.mp4"
+                },
+                {
+                    type:"row",
                     title:"Defining the Experience",
                     description:"After surveying a group of potential users I found that the priority for users is ease of access into a playlist. This led to two main user flows that I sketched out on paper: Adding a new ‘Q’ and joining an existing ‘Q’.",
                     img:"/img/q-sketch.png"
@@ -71,7 +75,13 @@ const ProjectAPI = {
                 {
                    type: "row",
                    title: "Disposability",
-                   description: "The main constraint of this project would be getting the approval of different streaming services to use their streaming APIs. The idea is that Q removes playlists are no longer playable after the playlist has been idle for a set amount of time. Any liked songs from past playlists get saved in a user profile, but they only serve as links to the streaming platform as no songs are saved within Q",
+                   description: "The main constraint of this project would be getting the approval of different streaming services to use their streaming APIs. The idea is that Q removes playlists are no longer playable after the playlist has been idle for a set amount of time. Any liked songs from past playlists get saved in a user profile, but they only serve as links to the streaming platform as no songs are saved within Q.",
+                },
+                {
+                    type:"row-narrow",
+                    title:"Q-code Flow",
+                    description:"Q makes joining new friends easy. With each unique Q-code a person can share their playlists on-demand",
+                    video:"/img/q-iphone-demo.mp4"
                 },
                 {
                     type:"row",

@@ -14,6 +14,8 @@ const Rows = ({layout}) => (
             title={row.title}
             description={row.description}
             image={row.img}
+            video={row.video}
+            layout={row.type}
         />
     ))
 )

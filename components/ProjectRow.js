@@ -8,8 +8,8 @@ import Fade from 'react-reveal';
             image="img/dick.png"
        >
 */
-const ProjectRow = ({title, description, image}) => (
-    <div className="project-piece">
+const ProjectRow = ({title, description, image, video, layout}) => (
+    <div className="project-piece" layout={layout}>
         <Fade>
             {(title || description) &&
                 <div className="project-description">
@@ -29,13 +29,24 @@ const ProjectRow = ({title, description, image}) => (
             }
         </Fade>
         <Fade bottom>
-            {image &&
-                <div className="project-image">
-                    <img src={image}/>
-                </div>
+            {(image || video) &&
+            <div>
+                {image &&
+                    <div className="project-image">
+                        <img src={image}/>
+                    </div>
+                }
+                {video &&
+                    <div className="project-video">
+                        <video playsInline autoPlay loop muted>
+                            <source src={video} type="video/mp4"/>
+                        </video>
+                    </div>
+                }
+            </div>
             }
         </Fade>
     </div>
 )
 
-export default ProjectRow;
+export default ProjectRow

@@ -175,15 +175,20 @@ body {
   padding: 0 96px;
   .project-piece {
     display: flex;
-    justify-content: space-between;
-    &:nth-child(even) > .project-image {
-    order: -1;
-  }
+    justify-content: center;
+    &[layout=row-narrow] {
+      max-width: 1000px;
+      align-self: center;
+      margin: 0 auto;
+    }
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
 
     .project-description {
       display: flex;
       flex-wrap: wrap;
-      width: 39%;
+      width: 80%;
       align-items: center;
 
       div {
@@ -219,21 +224,40 @@ body {
         align-self: center;
       }
     }
+
+    .project-video {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      max-width: 720px;
+      video {
+        max-width: 100%;
+        align-self: center;
+      }
+    }
   }
 }
 
 body {
   &[theme=canvas] {
     background-color: #EDEDED;
-    header {
-      background-image: linear-gradient(rgba(237, 237, 237, 1) 80%, rgba(237, 237, 237, 0));
+    #root {
+    a {
+      color: black;
     }
-  }
-}
-
-body & [theme=canvas] {
-  > header {
-    background-image: linear-gradient(rgba(237, 237, 237, 1) 80%, rgba(237, 237, 237, 0));
+      div {
+        header {
+          background-image: linear-gradient(rgba(237, 237, 237, 1) 80%, rgba(237, 237, 237, 0));
+          nav {
+            div {
+              svg {
+                fill: black;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -328,6 +352,7 @@ body & [theme=canvas] {
     isolation: isolate;
     fill: none;
     stroke: #fff;
+    stroke-width: 2px;
   }
   .cls-3 {
     fill: #fff;
