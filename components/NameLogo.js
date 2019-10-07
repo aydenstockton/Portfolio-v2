@@ -2,9 +2,6 @@ import React from 'react';
 
 const NameLogo = () => (
     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 56.26">
-        <defs>
-            <style>.cls-1</style>
-        </defs>
         <title>ayden-stockton-logo</title>
         <path className="cls-1"
               d="M12.49,37.82l-6.1,3.1c-2-.67-5.39-3.1-5.39-6.73V22.28l10.25-5.2c2.05.67,5.39,3.1,5.39,6.72v9c0,1.82.86,3.34,2.43,3.63l-2.43,4.48A9,9,0,0,1,12.49,37.82ZM8.25,21.52s-1.86-.06-1.86,2.28v9c0,2,1,3.67,3,3.67,0,0,1.9.05,1.9-2.29v-9C11.25,23.13,10.2,21.52,8.25,21.52Z"
@@ -49,4 +46,3 @@ const NameLogo = () => (
 );
 
 export default NameLogo
-
