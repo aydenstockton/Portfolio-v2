@@ -55,6 +55,11 @@ const ProjectAPI = {
                     video:"/img/q-explanation-1.mp4"
                 },
                 {
+                    type: "row-narrow",
+                    title: "Disposability",
+                    description: "The main constraint of this project would be getting the approval of different streaming services to use their streaming APIs. The idea is that Q removes playlists are no longer playable after the playlist has been idle for a set amount of time. Any liked songs from past playlists get saved in a user profile, but they only serve as links to the streaming platform as no songs are saved within Q.",
+                },
+                {
                     type:"row",
                     title:"Defining the Experience",
                     description:"After surveying a group of potential users I found that the priority for users is ease of access into a playlist. This led to two main user flows that I sketched out on paper: Adding a new ‘Q’ and joining an existing ‘Q’.",
@@ -79,9 +84,8 @@ const ProjectAPI = {
                     img:"/img/q-icons.png"
                 },
                 {
-                   type: "row-narrow",
-                   title: "Disposability",
-                   description: "The main constraint of this project would be getting the approval of different streaming services to use their streaming APIs. The idea is that Q removes playlists are no longer playable after the playlist has been idle for a set amount of time. Any liked songs from past playlists get saved in a user profile, but they only serve as links to the streaming platform as no songs are saved within Q.",
+                    type:"row",
+                    img:"/img/q-overview.png"
                 },
                 {
                     type:"row-narrow",
@@ -90,8 +94,10 @@ const ProjectAPI = {
                     video:"/img/q-iphone-demo.mp4"
                 },
                 {
-                    type:"row",
-                    img:"/img/q-overview.png"
+                    type:"row-narrow",
+                    title:"Multiplatform Browsing",
+                    description:"Once you’re in, you have access to all the music available on your own preferred streaming platform as well as any platforms used by those who have joined your Q. You continue to have access until the Q expires or you disconnect from the Q.",
+                    video:"/img/q-add-song.mp4"
                 }
             ]
         },
