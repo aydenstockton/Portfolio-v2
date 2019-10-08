@@ -45,6 +45,12 @@ const ProjectAPI = {
             ],
             layout:[
                 {
+                    type:"row-narrow",
+                    title:"The Idea",
+                    description:"The idea came about when some friends wanted to share music but had different streaming platforms and different mobile devices. This made it impossible to share at the same time without unplugging and passing around the device.",
+                    video:"/img/q-switch.mp4"
+                },
+                {
                     type:"row",
                     video:"/img/q-explanation-1.mp4"
                 },
@@ -73,14 +79,14 @@ const ProjectAPI = {
                     img:"/img/q-icons.png"
                 },
                 {
-                   type: "row",
+                   type: "row-narrow",
                    title: "Disposability",
                    description: "The main constraint of this project would be getting the approval of different streaming services to use their streaming APIs. The idea is that Q removes playlists are no longer playable after the playlist has been idle for a set amount of time. Any liked songs from past playlists get saved in a user profile, but they only serve as links to the streaming platform as no songs are saved within Q.",
                 },
                 {
                     type:"row-narrow",
                     title:"Q-code Flow",
-                    description:"Q makes joining new friends easy. With each unique Q-code a person can share their playlists on-demand",
+                    description:"Q makes joining new friends easy. With each unique Q-code a person can share their playlists on-demand.",
                     video:"/img/q-iphone-demo.mp4"
                 },
                 {
