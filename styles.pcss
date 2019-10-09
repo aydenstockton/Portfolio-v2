@@ -123,14 +123,6 @@ body {
           }
         }
 
-        .Welcome {
-          display: flex;
-          width: 100vw;
-          h1 {
-            color: white;
-          }
-        }
-
         .Thumbnail {
           display: flex;
           width: 100%;
@@ -206,10 +198,14 @@ body {
 
 .Welcome {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 80vh;
   > div {
     display: flex;
     justify-content: center;
+    height: inherit;
 
     div {
       display: flex;
@@ -232,7 +228,6 @@ body {
   }
 
   .welcometoparent {
-    top: 150px;
     &:nth-child(1) {
       animation: tickerwelcome 56s linear infinite backwards;
       animation-direction: reverse;
@@ -245,7 +240,6 @@ body {
   }
 
   .idesignparent {
-    top: 300px;
     &:nth-child(1) {
       animation: tickeridesign 56s linear infinite backwards;
     }
@@ -256,7 +250,6 @@ body {
   }
 
   .pdesignerparent {
-    top: 450px;
     &:nth-child(1) {
       animation: tickerwelcome 56s linear infinite backwards;
       animation-direction: reverse;
@@ -269,7 +262,6 @@ body {
   }
 
   .vdesignerparent {
-    top: 600px;
     &:nth-child(1) {
       animation: tickervdesign 44s linear infinite backwards;
     }
