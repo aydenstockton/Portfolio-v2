@@ -8,8 +8,8 @@ import Fade from 'react-reveal';
             image="img/dick.png"
        >
 */
-const ProjectRow = ({title, description, image, video, layout}) => (
-    <div className="project-piece" layout={layout}>
+const ProjectRow = ({title, description, image, video, layout, size}) => (
+    <div className="project-piece" layout={layout} size={size}>
         <Fade>
             {(title || description) &&
                 <div className="project-description">

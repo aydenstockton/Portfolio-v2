@@ -51,7 +51,8 @@ const ProjectAPI = {
                     video:"/img/q-switch.mp4"
                 },
                 {
-                    type:"row",
+                    type:"media",
+                    size:"small",
                     video:"/img/q-explanation-1.mp4"
                 },
                 {
@@ -63,28 +64,28 @@ const ProjectAPI = {
                     type:"row",
                     title:"Defining the Experience",
                     description:"After surveying a group of potential users I found that the priority for users is ease of access into a playlist. This led to two main user flows that I sketched out on paper: Adding a new ‘Q’ and joining an existing ‘Q’.",
-                    img:"/img/q-sketch.png"
+                    img:"/img/q-sketch.webp"
                 },
                 {
                     type:"row",
                     title:"Branding the Experience",
                     description:"Once the flow was refined, the visual design and branding process started as small iterations on a few wireframes to help me understand which direction I wanted to go with the brand. After getting a few iterations out of the way, I took a step back and did a deeper branding study on what exactly the product is and how it should feel.",
-                    img:"/img/q-branding.png"
+                    img:"/img/q-branding.webp"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/q-mm-quote.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/q-moodboard.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/q-icons.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/q-overview.png"
                 },
                 {
@@ -136,19 +137,19 @@ const ProjectAPI = {
             ],
             layout:[
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/chocolate-lineup-1.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/chocolate-lineup-2.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/chocolate-shirt-wheels.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/chocolate-insta.png"
                 },
             ]
@@ -198,9 +199,37 @@ const ProjectAPI = {
             layout:[
                 {
                     type:"row",
-                    title:"",
-                    description:"",
-                    img:"/img/0.png"
+                    title:"Formatting",
+                    description:"Agent feedback suggested that the current table format was not working fast enough. Condensing and categorizing process flows became the priority. So, I started by separating each user process into its own collapsable row and from there began to explore new ways to display information in cards.",
+                    img:"/img/paperless-fade.webp"
+                },
+                {
+                    type:"row",
+                    title:"Re-Send Function",
+                    description:"A communication re-send function was a high priority agent request. Card based UI allowed for a clear separation between process items that could each have their own resend function attached. After confirming that agents felt that a card format was more efficient for finding the information they were searching for, I started to explore ways of attaching a resend function to each process item.",
+                    img:"/img/pref-resend-cards.webp"
+                },
+                {
+                    type:"row",
+                    title:"Customer Focus",
+                    description:"Showing future states helps agents understand what to expect after issues are resolved and in turn helps them manage a customer’s expectations. Thus improving communication and the overall experience between an agent and customer.",
+                    img:"/img/pref-future-events.webp"
+                },
+                {
+                    type:"row",
+                    title:"Customer Focus",
+                    description:"After weeks of testing wireframes, I created high fidelity prototypes and spec sheets. When the design sprint was done, I delivered the spec sheets to development and I continued to work with development throughout the build process.",
+                    img:"/img/pref-handoff.webp"
+                },
+                {
+                    type:"media",
+                    size:"large",
+                    video:"/img/experience-in-context-white.mp4"
+                },
+                {
+                    type: "row-narrow",
+                    title: "Agent Reactions",
+                    description: "",
                 },
             ]
         },
@@ -241,39 +270,39 @@ const ProjectAPI = {
             ],
             layout:[
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/ss-gear-indicator.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/ss-gear-interface.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/ss-shifting-ux.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/ss-vibrate-feedback.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/ss-profile-settings.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/ss-menu-map.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/ss-construction.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/ss-design-options.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/ss-render-context.png"
                 },
             ]
@@ -317,15 +346,15 @@ const ProjectAPI = {
             ],
             layout:[
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/as-card.gif"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/as-card-triple.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/as-card-tile.png"
                 },
             ]
@@ -409,15 +438,15 @@ const ProjectAPI = {
             ],
             layout:[
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/okra-dimension.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/okra-sample.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/okra-full-typeface.png"
                 },
             ]
@@ -456,11 +485,11 @@ const ProjectAPI = {
             ],
             layout:[
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/mp-app-sketches.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/mp-app-logosheet.png"
                 },
                 {
@@ -470,11 +499,11 @@ const ProjectAPI = {
                     img:"/img/mp-app-grid.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/mp-app-iconsheet.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/mp-app-iphonex.png"
                 },
             ]
@@ -520,23 +549,23 @@ const ProjectAPI = {
             ],
             layout:[
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/nyt-wed.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/nyt-thurs.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/nyt-fri.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/nyt-dutch.png"
                 },
                 {
-                    type:"row",
+                    type:"media",
                     img:"/img/nyt-triple.png"
                 },
 
@@ -590,7 +619,7 @@ const ProjectAPI = {
                     img:"/img/vista-v2.png"
                 },
             ]
-        },
+        }
     ],
     all: function () {
         return this.projects;

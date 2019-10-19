@@ -2,7 +2,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
 import Work from './Work'
-import Contact from './Contact'
+import About from './About'
 import { spring, AnimatedSwitch } from 'react-router-transition';
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /work
@@ -54,7 +54,7 @@ const Main = () => (
       >
       <Route exact path='/' component={Home}/>
       <Route path='/work' component={Work}/>
-      <Route path='/contact' component={Contact}/>
+      <Route path='/about' component={About}/>
     </AnimatedSwitch>
   </main>
 )

@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectAPI from '../Api'
+import ProjectAPI from '../ProjectAPI'
 import Thumbnail from './Thumbnail'
 
 function Thumbnails(props) {

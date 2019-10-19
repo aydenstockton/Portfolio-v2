@@ -103,19 +103,34 @@ figure {
         display: flex;
         justify-content: center;
         margin: 128px 0;
+        min-height: 540px;
+        align-items: center;
+
         &[layout=row-narrow] {
             max-width: 1000px;
             align-self: center;
             margin: 128px auto;
         }
+
         &:nth-child(odd) {
             flex-direction: row-reverse;
+        }
+        &:nth-child(even) {
+            .project-image {
+                padding: 0 0 0 96px;
+            }
+        }
+
+        &[layout=media] {
+            .project-image {
+                padding: 0;
+            }
         }
 
         .project-description {
             display: flex;
             flex-wrap: wrap;
-            width: 80%;
+            max-width: 960px;
             align-items: center;
 
             > div {
@@ -145,6 +160,7 @@ figure {
             display: flex;
             justify-content: center;
             flex: 1;
+            padding: 0 96px 0 0;
 
             img {
                 max-width: 100%;

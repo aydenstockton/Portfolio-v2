@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectAPI from '../../Api';
+import ProjectAPI from '../../ProjectAPI';
 import { Link } from 'react-router-dom';
 import ProjectRow from '../ProjectRow';
 import Intro from "../Intro";
@@ -16,6 +16,7 @@ const Rows = ({layout}) => (
             image={row.img}
             video={row.video}
             layout={row.type}
+            size={row.size}
         />
     ))
 )
