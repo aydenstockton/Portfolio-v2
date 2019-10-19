@@ -614,9 +614,15 @@ const ProjectAPI = {
             layout:[
                 {
                     type:"row",
-                    title:"Shift Towards Modularity",
-                    description:"Before joining the project, other members of the UX team had done an initial redesign of the page that shifted towards a modular format. Although the design was an improvement, it did not meet all of the requirements and would not be technically feasible. I took inspiration from the redesign and worked with stakeholders and developers to come up with a modular approach that met all the requirements and would be possible to build within scope.",
-                    img:"/img/vista-v2.png"
+                    title:"Redesign Phase 1",
+                    description:"The first design phase shifted towards a modular format. Although the design was an improvement, it did not meet all of the requirements established by stakeholders. I took elements from the first phase and worked with stakeholders and developers to come up with a new approach that would be within scope.",
+                    img:"/img/vista-v2.webp"
+                },
+                {
+                    type:"row",
+                    title:"Pinning and shortcuts",
+                    description:"One of the favorite features among users was the ability to create custom shortcuts. The initial design implemented a “pinning” button at the top of each content page that would save the page in a list of links.",
+                    video:"/img/vista-pinning-trimmed.mp4"
                 },
             ]
         }
