@@ -583,7 +583,7 @@ const ProjectAPI = {
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
-                    description:"The Vista project effort consisted of a UI refresh for the enterprise portal.",
+                    description:"The Vista project effort consisted of a UI refresh for the enterprise resource portal.",
                 },
                 {
                     title:"THE PROBLEM",
@@ -620,7 +620,7 @@ const ProjectAPI = {
                 },
                 {
                     type:"row",
-                    title:"Pinning and shortcuts",
+                    title:"Pinning and Shortcuts",
                     description:"One of the favorite features among users was the ability to create custom shortcuts. The initial design implemented a “pinning” button at the top of each content page that would save the page in a list of links.",
                     video:"/img/vista-pinning-trimmed.mp4"
                 },

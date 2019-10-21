@@ -6,7 +6,7 @@ import Block from './Block/Block'
 const About = () => (
     <div>
         <div>
-            <img src="as-card-thumbnail.png"/>
+            <img src=""/>
         </div>
         <div>
             <Block/>

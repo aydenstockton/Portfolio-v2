@@ -72,7 +72,7 @@ const ProjectWrapper = ({project}) => {
             <div className="project-page">
                 {
                     project.layout &&
-                    <Rows layout={project.layout} />
+                    <Rows layout={project.layout}/>
                 }
                 <Link to='/work'>Back</Link>
             </div>
