@@ -2,8 +2,8 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import Fade from 'react-reveal';
 
-const Thumbnail = ({name, src, number}) => (
-        <Link to={`/work/${number}`}>
+const Thumbnail = ({name, src, number, id}) => (
+        <Link to={`/work/${id}`}>
             <Fade bottom cascade>
                 <div className="Thumbnail" key={number}>
                     <div className="picture-wrapper">

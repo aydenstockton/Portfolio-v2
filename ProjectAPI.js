@@ -631,8 +631,17 @@ const ProjectAPI = {
         return this.projects;
     },
     get: function (id) {
-        const isProject = p => p.number === id
-        return this.projects.find(isProject);
+        //const isProject = p => p.string === id
+
+
+        return this.projects.find(function(project) {
+            if(project.id === id) {
+                return true;
+            };
+            return false;
+        });
+
+        //return this.projects.find(isProject);
     }
 };
 

@@ -2,8 +2,9 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
 import Work from './Work'
-import About from './About'
 import { spring, AnimatedSwitch } from 'react-router-transition';
+import AboutPage from './AboutPage/AboutPage';
+
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /work
 // and /contact routes will match any pathname that starts
@@ -54,7 +55,7 @@ const Main = () => (
       >
       <Route exact path='/' component={Home}/>
       <Route path='/work' component={Work}/>
-      <Route path='/about' component={About}/>
+      <Route path='/about' component={AboutPage}/>
     </AnimatedSwitch>
   </main>
 )

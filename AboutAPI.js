@@ -17,16 +17,12 @@ const AboutAPI = {
             description:"I’m from Long Beach, CA but I’m currently residing in San Francisco, CA. That can change. In fact, if you’re reading this and live somewhere cool, please let me know how I can get there."
         },
         {
-            title:"WHERE AM I?",
-            description: <strike>Design is a way of life.</strike> + "OK so yeah, that might be true but it’s pretty cliché. So I’ll try to say it in my own way. Design gives me life. When I'm working on something I'm passionate about I can feel the drive pushing me forward and time ceases to matter. I’ve always loved solving problems creatively and design is just that."
+            title:"WHY DO I DO WHAT I DO?",
+            description: "Design is something I found when I was 15. It's always made sense. I have always loved solving problems and design is just that. Only, there's no one answer to any of the problems. It's the prefect blend of logic and creativity that makes me feel at home."
         }
     ],
     all: function () {
         return this.about;
-    },
-    get: function (id) {
-        const isABout = p => p.number === id
-        return this.projects.find(isAbout);
     }
 };
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectAPI from '../../ProjectAPI';
 import { Link } from 'react-router-dom';
-import ProjectRow from '../ProjectRow';
 import Intro from "../Intro";
 import "./styles.pcss";
 import { Parallax } from 'react-scroll-parallax';
@@ -19,6 +18,47 @@ const Rows = ({layout}) => (
             size={row.size}
         />
     ))
+)
+
+const ProjectRow = ({title, description, image, video, layout, size}) => (
+    <div className="project-piece" layout={layout} >
+        <Fade>
+            {(title || description) &&
+            <div className="project-description">
+                <div>
+                    {title &&
+                    <title>
+                        {title}
+                    </title>
+                    }
+                    {description &&
+                    <p>
+                        {description}
+                    </p>
+                    }
+                </div>
+            </div>
+            }
+        </Fade>
+        <Fade bottom>
+            {(image || video) &&
+            <div>
+                {image &&
+                <div className="project-image">
+                    <img src={image}/>
+                </div>
+                }
+                {video &&
+                <div className="project-video" size={size}>
+                    <video playsInline autoPlay loop muted>
+                        <source src={video} type="video/mp4"/>
+                    </video>
+                </div>
+                }
+            </div>
+            }
+        </Fade>
+    </div>
 )
 
 const ProjectIntro = ({intro}) => (
@@ -85,13 +125,9 @@ class Project extends React.Component {
         super(props);
     }
 
-    componentDidMount() {
-
-    }
-
     render() {
         const project = ProjectAPI.get(
-          parseInt(this.props.match.params.project, 10)
+          this.props.match.params.projectID
         );
         let theme = "universe";
         if(project.theme) {

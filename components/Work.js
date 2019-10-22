@@ -53,7 +53,7 @@ const Work = () => {
             className="switch-wrapper"
         >
             <Route exact path='/work' component={FullPortfolio}/>
-            <Route path='/work/:project' component={Project}/>
+            <Route path='/work/:projectID' component={Project}/>
         </AnimatedSwitch>
     )
 }

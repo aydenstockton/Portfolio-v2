@@ -5,7 +5,7 @@ import Thumbnail from './Thumbnail'
 function Thumbnails(props) {
     // const thumbs = ProjectAPI.all();
     const thumbItems = props.thumbs.map((thumb) =>
-        <Thumbnail name={thumb.name} src={thumb.src} number={thumb.number} />
+        <Thumbnail name={thumb.name} src={thumb.src} number={thumb.number} id={thumb.id} />
     );
     return (
         <div className="work-wrapper">{thumbItems}</div>
