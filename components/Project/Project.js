@@ -5,7 +5,7 @@ import Intro from "../Intro";
 import "./styles.pcss";
 import { Parallax } from 'react-scroll-parallax';
 import Fade from 'react-reveal';
-
+import posed, { PoseGroup } from 'react-pose'
 
 const Rows = ({layout}) => (
     layout.map((row, index) => (
@@ -61,31 +61,43 @@ const ProjectRow = ({title, description, image, video, layout, size}) => (
     </div>
 )
 
+const ContainerParent = posed.div({
+    enter: { staggerChildren: 50 }
+});
+
+const ContainerChild = posed.div({
+    enter: { y: 0, opacity: 1 },
+    exit: { y: 50, opacity: 0 }
+});
+
+const ContainerChildR = posed.div({
+    enter: { y: 0, opacity: 1 },
+    exit: { y: -50, opacity: 0 }
+});
+
 const ProjectIntro = ({intro}) => (
-    <div>
-        <Fade bottom>
+    <ContainerParent className="introtext">
+        <ContainerChild>
             <h1>{intro.name}</h1>
-        </Fade>
-        <Fade bottom cascade>
-            <div>
-                <div intro="seperator">
-                    <Intro blocks={intro.introLeft}/>
-                </div>
-                <div intro="seperator">
-                    <Intro blocks={intro.introRight}/>
-                </div>
-            </div>
-        </Fade>
-    </div>
+        </ContainerChild>
+        <ContainerParent>
+            <ContainerChild className="seperator">
+                <Intro blocks={intro.introLeft}/>
+            </ContainerChild>
+            <ContainerChild className="seperator">
+                <Intro blocks={intro.introRight}/>
+            </ContainerChild>
+        </ContainerParent>
+    </ContainerParent>
 );
 
 const Hero = ({logo, hero}) => (
     <div project="hero">
-        <div>
-            <Fade top>
+        <ContainerParent>
+            <ContainerChildR>
                 <img src={logo}/>
-            </Fade>
-        </div>
+            </ContainerChildR>
+        </ContainerParent>
         <div>
             <Parallax className="banner" y={[-20, 20]} tagOuter="figure">
                 <img src={hero}/>

@@ -4,9 +4,7 @@ import Fade from "react-reveal";
 
 const Blocks = ({blocks}) => (
     blocks.map((block, index) => (
-        <Fade bottom>
             <Block block={block}/>
-        </Fade>
     ))
 )
 

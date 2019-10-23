@@ -1,6 +1,11 @@
 import React from 'react'
 import ProjectAPI from '../ProjectAPI'
 import Thumbnail from './Thumbnail'
+import posed from "react-pose";
+
+const ContainerParent = posed.div({
+    enter: { staggerChildren: 50 }
+});
 
 function Thumbnails(props) {
     // const thumbs = ProjectAPI.all();
@@ -8,7 +13,7 @@ function Thumbnails(props) {
         <Thumbnail name={thumb.name} src={thumb.src} number={thumb.number} id={thumb.id} />
     );
     return (
-        <div className="work-wrapper">{thumbItems}</div>
+        <ContainerParent className="work-wrapper">{thumbItems}</ContainerParent>
     );
 }
 
