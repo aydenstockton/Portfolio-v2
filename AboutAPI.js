@@ -18,7 +18,7 @@ const AboutAPI = {
         },
         {
             title:"WHY DO I DO WHAT I DO?",
-            description: "Design is something I found when I was 15. It's always made sense. I have always loved solving problems and design is just that. Only, there's no one answer to any of the problems. It's the prefect blend of logic and creativity that makes me feel at home."
+            description: "Design is something I found when I was 15. It's always made sense. I have always loved solving problems and design is just that. Only, there's no one answer to any of the problems. It's the perfect blend of logic and creativity that makes me feel at home."
         }
     ],
     all: function () {

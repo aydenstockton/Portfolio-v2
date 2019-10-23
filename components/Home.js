@@ -23,18 +23,24 @@ const Home = () => (
         <WelcomeTo/>
         <WelcomeTo/>
     </div>
-    <div>
+    <div id="idesigntop">
        <IDesign/>
        <IDesign/>
     </div>
-    <div>
+    <div id="product">
          <PDesigner/>
          <PDesigner/>
     </div>
-    <div>
+    <div id="visual">
           <VDesigner/>
           <VDesigner/>
     </div>
+    <video playsinline autoPlay loop muted id="productvideo">
+          <source src="/img/test-video.mp4" type="video/mp4"/>
+    </video>
+    <video playsinline autoPlay loop muted id="visualvideo">
+          <source src="/img/den-video.mp4" type="video/mp4"/>
+    </video>
   </div>
 );
 
