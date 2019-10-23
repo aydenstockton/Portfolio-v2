@@ -94,7 +94,7 @@ const ProjectIntro = ({intro}) => (
 const Hero = ({logo, hero}) => (
     <div project="hero">
         <ContainerParent>
-            <ContainerChildR>
+            <ContainerChildR className="projectlogo">
                 <img src={logo}/>
             </ContainerChildR>
         </ContainerParent>

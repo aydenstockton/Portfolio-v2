@@ -51,8 +51,10 @@ figure {
         height: 216px;
         position: absolute;
         z-index: 10;
-        > img {
-            width: 100%
+        .projectlogo {
+            img {
+                width: 100%
+            }
         }
     }
     > div:last-child {
@@ -99,7 +101,13 @@ figure {
 }
 
 .project-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1920px;
     padding: 0 96px;
+    margin: 0 auto;
+
     .project-piece {
         display: flex;
         justify-content: center;
