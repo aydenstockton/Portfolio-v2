@@ -22,7 +22,7 @@ class AboutPage extends React.Component {
         return (
             <ContainerParent type="aboutpage">
                 <div type="vanity">
-                    <img src=""/>
+                    <img src="/img/hoa-gradient.png"/>
                 </div>
 
                 <div type="aboutblocks">
