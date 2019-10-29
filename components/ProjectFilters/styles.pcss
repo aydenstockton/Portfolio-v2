@@ -1,3 +1,37 @@
 [project=filter] {
     color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    margin: 24px auto;
+    div {
+        display: flex;
+        position: relative;
+        p {
+            font-family: aktiv-grotesk-extended, sans-serif;
+            font-size: 40px;
+            margin: 0;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    [filter=all] {
+        &:after {
+            content: "";
+            border-right: 1px solid white;
+            position: absolute;
+            right: -28px;
+            height: 40px;
+        }
+    }
+    [filter=product] {
+        &:after {
+            content: "";
+            border-right: 1px solid white;
+            position: absolute;
+            right: -28px;
+            height: 40px;
+        }
+    }
 }

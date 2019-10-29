@@ -29,10 +29,10 @@ const Home = () => (
           <VDesigner/>
           <VDesigner/>
     </div>
-    <video playsinline autoPlay loop muted id="productvideo">
+    <video playsInline autoPlay loop muted id="productvideo">
           <source src="/img/test-video.mp4" type="video/mp4"/>
     </video>
-    <video playsinline autoPlay loop muted id="visualvideo">
+    <video playsInline autoPlay loop muted id="visualvideo">
           <source src="/img/den-video.mp4" type="video/mp4"/>
     </video>
   </div>
