@@ -2,10 +2,10 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
 import Work from './Work'
-import { spring, AnimatedSwitch } from 'react-router-transition';
+// import { spring, AnimatedSwitch } from 'react-router-transition';
 import AboutPage from './AboutPage/AboutPage';
-import posed, { PoseGroup } from 'react-pose'
-import FullPortfolio from './FullPortfolio'
+import posed, { PoseGroup } from 'react-pose';
+// import FullPortfolio from './FullPortfolio'
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /work
@@ -54,25 +54,17 @@ const RouteContainer = posed.div({
 const Main = () => (
     <Route
         render={({ location }) => (
-          <main>
-              {/*<AnimatedSwitch*/}
-              {/*    atEnter={bounceTransition.atEnter}*/}
-              {/*    atLeave={bounceTransition.atLeave}*/}
-              {/*    atActive={bounceTransition.atActive}*/}
-              {/*    mapStyles={mapStyles}*/}
-              {/*    className="switch-wrapper"*/}
-              {/*>*/}
+          <div id="main">
               <PoseGroup>
-                  <RouteContainer key={location.key}>
+                  <RouteContainer key={location.pathname}>
                       <Switch location={location}>
                           <Route exact path='/' component={Home} key="home"/>
                           <Route path='/work' component={Work} key="work"/>
-                          <Route path='/about' component={AboutPage} key={"about"}/>
+                          <Route path='/about' component={AboutPage} key="about"/>
                       </Switch>
                   </RouteContainer>
               </PoseGroup>
-            {/*</AnimatedSwitch>*/}
-          </main>
+          </div>
         )}
     />
 )

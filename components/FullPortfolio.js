@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectAPI from '../ProjectAPI'
 import Thumbnail from './Thumbnail'
 import posed from "react-pose";
+import ProjectFilters from "./ProjectFilters/ProjectFilters";
 
 const ContainerParent = posed.div({
     enter: { staggerChildren: 50 }
@@ -23,7 +24,10 @@ const FullPortfolio = () => {
     document.getElementsByTagName("BODY")[0].setAttribute("theme", "universe");
 
     return (
-        <Thumbnails thumbs={ProjectAPI.all()}/>
+        <React.Fragment>
+            <ProjectFilters/>
+            <Thumbnails thumbs={ProjectAPI.all()}/>
+        </React.Fragment>
     )
 }
 
