@@ -459,7 +459,7 @@ const ProjectAPI = {
             theme: "universe",
             src: "/img/mp-app-thumbnail.webp",
             logo:"/img/mp-app-logo.svg",
-            hero:"",
+            hero:"/img/mp-app-banner.webp",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
