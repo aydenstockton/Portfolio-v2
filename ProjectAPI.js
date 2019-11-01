@@ -9,9 +9,9 @@ const ProjectAPI = {
             name: "Q Mobile App",
             type: "Product Design",
             theme: "universe",
-            src: "/img/q-device-thumbnail.png",
+            src: "/img/q-thumbnail.webp",
             logo:"/img/q-logo.svg",
-            hero:"/img/screen-tiles-web.png",
+            hero:"/img/q-banner.webp",
             introLeft:[
                 {
                    title:"PROJECT OVERVIEW",
@@ -108,9 +108,9 @@ const ProjectAPI = {
             name: "Gravity Series",
             type: "Visual Design",
             theme: "universe",
-            src: "/img/choc-thumbnail.png",
+            src: "/img/chocolate-thumbnail.webp",
             logo:"/img/chocolate-box-logo-color.svg",
-            hero:"/img/chocolate-hero-2.png",
+            hero:"/img/chocolate-banner.webp",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -160,9 +160,9 @@ const ProjectAPI = {
             name: "Preference History",
             type: "Product Design",
             theme: "canvas",
-            src: "/img/p-hist-thumbnail.png",
+            src: "/img/pref-hist-thumbnail.webp",
             logo:"/img/aaa-logo-color.svg",
-            hero:"/img/pref-hist-hero-web.png",
+            hero:"/img/pref-hist-banner.webp",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -239,9 +239,9 @@ const ProjectAPI = {
             name: "Swift Shift",
             type: "Product Design",
             theme: "universe",
-            src: "/img/ss-thumbnail.png",
+            src: "/img/ss-thumbnail.webp",
             logo:"/img/ss-logo.svg",
-            hero:"/img/ss-hero-web.png",
+            hero:"/img/ss-banner.webp",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -313,9 +313,9 @@ const ProjectAPI = {
             name: "Business Card",
             type: "Product Design",
             theme: "universe",
-            src: "/img/as-card-thumbnail.png",
+            src: "/img/as-card-thumbnail.webp",
             logo:"/img/as-card-logo.svg",
-            hero:"/img/as-card-tile.png",
+            hero:"/img/as-card-banner.webp",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -365,9 +365,9 @@ const ProjectAPI = {
             name: "Premium Change",
             type: "Product Design",
             theme: "canvas",
-            src: "/img/pct-thumbnail.png",
+            src: "/img/pct-thumbnail.webp",
             logo:"/img/aaa-logo-color.svg",
-            hero:"/img/pct-hero-web.png",
+            hero:"/img/pct-banner.webp",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -414,9 +414,9 @@ const ProjectAPI = {
             name: "okra",
             type: "Visual Design",
             theme: "universe",
-            src: "/img/okra-thumbnail.png",
+            src: "/img/okra-thumbnail.webp",
             logo:"/img/okra-logo.png",
-            hero:"/img/okra-hero-web.png",
+            hero:"/img/okra-banner.webp",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -457,7 +457,7 @@ const ProjectAPI = {
             name: "MyPolicy Mobile App",
             type: "Visual Design",
             theme: "universe",
-            src: "/img/mp-app-context-thumbnail.png",
+            src: "/img/mp-app-thumbnail.webp",
             logo:"/img/mp-app-logo.svg",
             hero:"",
             introLeft:[
@@ -514,9 +514,9 @@ const ProjectAPI = {
             name: "New York Times",
             type: "Visual Design",
             theme: "universe",
-            src: "/img/nyt-thumbnail.png",
+            src: "/img/nyt-thumbnail.webp",
             logo:"/img/nyt-t-logo.svg",
-            hero:"/img/nyt-triple.png",
+            hero:"/img/nyt-banner.webp",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -577,9 +577,9 @@ const ProjectAPI = {
             name: "Vista",
             type: "Product Design",
             theme: "canvas",
-            src: "/img/vista-thumbnail.png",
+            src: "/img/vista-thumbnail.webp",
             logo:"/img/aaa-logo-color.svg",
-            hero:"",
+            hero:"/img/vista-banner.webp",
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
