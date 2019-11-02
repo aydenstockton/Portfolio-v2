@@ -402,9 +402,35 @@ const ProjectAPI = {
             layout:[
                 {
                     type:"row",
-                    title:"",
-                    description:"",
-                    img:"/img/0.png"
+                    title:"Pilot Design",
+                    description:"The original design was done without UX input and aimed simply to fill a gap in agent workflow. The pilot proved to be useful to agents and the next phase of the project included the UX team to improve the visual design.",
+                    img:"/img/pct-pilot.webp"
+                },
+                {
+                    type:"row",
+                    title:"Addressing Hierarchy",
+                    description:"The lack of hierarchy and redundancy in the Pilot contributed to a slow readability. I started addressing the hierarchy issues in the three primary columns by highlighting the most critical piece of information: the price changes. I then addressed the redundancy issues in the detail section by grouping changes together.",
+                    img:"/img/pct-top-design.webp"
+                },
+                {
+                    type:"row",
+                    title:"Scope Changes",
+                    description:"Midway through the project, stakeholders determined the tool would no longer be embedded within an individual product, but would instead live in a new window. This gave me freedom to utilize the space more efficiently by breaking out of the card pattern that exists in many of AAA’s products. This new freedom allowed me to develop a new table style.",
+                    img:"/img/pct-table-final.webp"
+                },
+                {
+                    type:"media",
+                    img:"/img/pct-tables.webp"
+                },
+                {
+                    type:"row",
+                    title:"Flagging Pattern",
+                    description:"As a part of the new table pattern, I also iterated on our existing flag/tag pattern to accommodate for this use case. AAA has an established pattern for flags and tags that allows for text and one icon. In this case the icon is replaced with an item counter that accepts dynamic data.",
+                    img:"/img/pct-pills.webp"
+                },
+                {
+                    type:"media",
+                    img:"/img/pct-final.webp"
                 },
             ]
         },
@@ -623,6 +649,26 @@ const ProjectAPI = {
                     title:"Pinning and Shortcuts",
                     description:"One of the favorite features among users was the ability to create custom shortcuts. The initial design implemented a “pinning” button at the top of each content page that would save the page in a list of links.",
                     video:"/img/vista-pinning-trimmed.mp4"
+                },
+                {
+                    type:"row",
+                    title:"Redesign Phase 2",
+                    description:"The second design was created to fulfill requirements established by the product owners and within the constraints that engineering had established. The goal was to maintain the favorite features from the first design while also maintaining the modular concept.",
+                    img:"/img/vista-design-phase-2.webp"
+                },
+                {
+                    type:"media",
+                    img:"/img/vista-components.webp"
+                },
+                {
+                    type:"row-narrow",
+                    title:"Mobile App",
+                    description:"For the first time, Vista was going to be accessible on mobile screens. In order to achieve this I had to work closely with developers to establish breakpoints and design specs for each size.",
+                    video:"/img/vista-app-experience.mp4"
+                },
+                {
+                    type:"media",
+                    img:"/img/vista-trio.webp"
                 },
             ]
         }
