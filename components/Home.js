@@ -4,31 +4,39 @@ import WelcomeTo from'./WelcomeTo';
 import IDesign from './IDesign';
 import PDesigner from './PDesigner';
 import VDesigner from "./VDesigner";
+import HeySmall from './HeySmall';
+import IDesignSmall from './IDesignSmall';
+import PDesignerSmall from "./PDesignerSmall";
+import VDesignerSmall from "./VDesignerSmall";
+import MDesigner from "./MDesigner";
 
 const Home = () => (
 
   <div className="Welcome" key="welcome">
     <div>
-         <Hey/>
-         <Hey/>
-         <Hey/>
+         <HeySmall/>
+         <HeySmall/>
     </div>
     <div>
         <WelcomeTo/>
         <WelcomeTo/>
     </div>
-    <div id="idesigntop">
-       <IDesign/>
-       <IDesign/>
+    <div id="idesign-ticker">
+       <IDesignSmall/>
+       <IDesignSmall/>
     </div>
-    <div id="product">
-         <PDesigner/>
-         <PDesigner/>
+    <div id="product-ticker">
+         <PDesignerSmall/>
+         <PDesignerSmall/>
     </div>
-    <div id="visual">
-          <VDesigner/>
-          <VDesigner/>
+    <div id="visual-ticker">
+          <VDesignerSmall/>
+          <VDesignerSmall/>
     </div>
+      <div id="motion-ticker">
+          <MDesigner/>
+          <MDesigner/>
+      </div>
     <video playsInline autoPlay loop muted id="productvideo">
           <source src="/img/test-video.mp4" type="video/mp4"/>
     </video>
