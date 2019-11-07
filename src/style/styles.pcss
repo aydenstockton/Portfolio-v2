@@ -237,6 +237,12 @@ body {
     }
   }
 
+  #motion-ticker:hover {
+    ~ #motionvideo {
+      opacity: 0.7;
+    }
+  }
+
   .heyparent {
     &:nth-child(1) {
       animation: ticker 80s -40s linear infinite backwards;

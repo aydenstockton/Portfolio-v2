@@ -43,6 +43,9 @@ const Home = () => (
     <video playsInline autoPlay loop muted id="visualvideo">
           <source src="/img/den-video.mp4" type="video/mp4"/>
     </video>
+    <video playsInline autoPlay loop muted id="motionvideo">
+          <source src="/img/mdesigner.mp4" type="video/mp4"/>
+    </video>
   </div>
 );
 
