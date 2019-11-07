@@ -138,11 +138,11 @@ const ProjectAPI = {
             layout:[
                 {
                     type:"media",
-                    img:"/img/chocolate-lineup-1.png"
+                    img:"/img/chocolate-lineup-1.webp"
                 },
                 {
                     type:"media",
-                    img:"/img/chocolate-lineup-2.png"
+                    img:"/img/chocolate-lineup-2.webp"
                 },
                 {
                     type:"media",
