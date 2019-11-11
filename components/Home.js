@@ -9,44 +9,71 @@ import IDesignSmall from './IDesignSmall';
 import PDesignerSmall from "./PDesignerSmall";
 import VDesignerSmall from "./VDesignerSmall";
 import MDesigner from "./MDesigner";
+import posed from "react-pose";
 
-const Home = () => (
+const ContainerParent = posed.div({
+    enter: { staggerChildren: 50 }
+});
 
-  <div className="Welcome" key="welcome">
-    <div>
-         <HeySmall/>
-         <HeySmall/>
-    </div>
-    <div>
-        <WelcomeTo/>
-        <WelcomeTo/>
-    </div>
-    <div id="idesign-ticker">
-       <IDesignSmall/>
-       <IDesignSmall/>
-    </div>
-    <div id="product-ticker">
-         <PDesignerSmall/>
-         <PDesignerSmall/>
-    </div>
-    <div id="visual-ticker">
-          <VDesignerSmall/>
-          <VDesignerSmall/>
-    </div>
-      <div id="motion-ticker">
-          <MDesigner/>
-          <MDesigner/>
-      </div>
-    <video playsInline autoPlay loop muted id="productvideo">
-          <source src="/img/test-video.mp4" type="video/mp4"/>
-    </video>
-    <video playsInline autoPlay loop muted id="visualvideo">
-          <source src="/img/den-video.mp4" type="video/mp4"/>
-    </video>
-    <video playsInline autoPlay loop muted id="motionvideo">
-          <source src="/img/mdesigner.mp4" type="video/mp4"/>
-    </video>
-  </div>
-);
+class Home extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            active:"all"
+        }
 
+        this.handleActive = this.handleActive.bind(this);
+        this.handleInactive = this.handleInactive.bind(this);
+    }
+    handleActive(id, e) {
+        this.setState({
+            active:id
+        })
+    }
+    handleInactive() {
+        this.setState({
+            active:"all"
+        })
+    }
+    render() {
+        return (
+            <div className="Welcome" key="welcome" active={this.state.active}>
+                <div id="one" onMouseEnter={(e) => this.handleActive("one", e)} onMouseLeave={this.handleInactive}>
+                    <HeySmall/>
+                    <HeySmall/>
+                </div>
+                <div>
+                    <WelcomeTo/>
+                    <WelcomeTo/>
+                </div>
+                <div>
+                    <IDesignSmall/>
+                    <IDesignSmall/>
+                </div>
+                <div id="product-ticker" onMouseEnter={(e) => this.handleActive("product-ticker", e)} onMouseLeave={this.handleInactive}>
+                    <PDesignerSmall/>
+                    <PDesignerSmall/>
+                </div>
+                <div id="visual-ticker" onMouseEnter={(e) => this.handleActive("visual-ticker", e)} onMouseLeave={this.handleInactive}>
+                    <VDesignerSmall/>
+                    <VDesignerSmall/>
+                </div>
+                <div id="motion-ticker" onMouseEnter={(e) => this.handleActive("motion-ticker", e)} onMouseLeave={this.handleInactive}>
+                    <MDesigner/>
+                    <MDesigner/>
+                </div>
+                <video playsinline autoPlay loop muted id="productvideo">
+                    <source src="/img/test-video.mp4" type="video/mp4"/>
+                </video>
+                <video playsinline autoPlay loop muted id="visualvideo">
+                    <source src="/img/den-video.mp4" type="video/mp4"/>
+                </video>
+                <video playsinline autoPlay loop muted id="motionvideo">
+                    <source src="/img/mdesigner.mp4" type="video/mp4"/>
+                </video>
+            </div>
+        )
+    }
+
+}
 export default Home;

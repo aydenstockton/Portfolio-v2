@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectAPI from '../ProjectAPI'
-import Thumbnail from './Thumbnail'
+import Thumbnail from './Thumbnail/Thumbnail'
 import posed from "react-pose";
 import ProjectFilters from "./ProjectFilters/ProjectFilters";
 
@@ -11,7 +11,7 @@ const ContainerParent = posed.div({
 function Thumbnails(props) {
     // const thumbs = ProjectAPI.all();
     const thumbItems = props.thumbs.map((thumb) =>
-        <Thumbnail name={thumb.name} src={thumb.src} number={thumb.number} id={thumb.id} />
+        <Thumbnail name={thumb.name} src={thumb.src} number={thumb.number} id={thumb.id} type={thumb.type} />
     );
     return (
         <ContainerParent className="work-wrapper">{thumbItems}</ContainerParent>
@@ -20,15 +20,29 @@ function Thumbnails(props) {
 
 // The FullPortfolio iterates over all of the projects and creates
 // a link to their project page.
-const FullPortfolio = () => {
-    document.getElementsByTagName("BODY")[0].setAttribute("theme", "universe");
+class FullPortfolio extends React.Component {
+    constructor(props) {
+        super(props);
 
-    return (
-        <React.Fragment>
-            <ProjectFilters/>
-            <Thumbnails thumbs={ProjectAPI.all()}/>
-        </React.Fragment>
-    )
+        this.state = {type:"all"}
+        this.handleType = this.handleType.bind(this);
+    }
+    handleType(type, e) {
+        this.setState({
+            type:type
+        })
+    }
+
+    render() {
+        document.getElementsByTagName("BODY")[0].setAttribute("theme", "universe");
+
+        return (
+            <div type={this.state.type}>
+                <ProjectFilters handleType={this.handleType}/>
+                <Thumbnails thumbs={ProjectAPI.all()}/>
+            </div>
+        )
+    }
 }
 
 export default FullPortfolio

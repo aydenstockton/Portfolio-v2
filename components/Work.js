@@ -46,7 +46,7 @@ const Work = () => {
 
     return (
         <Switch>
-            <Route exact path='/work' component={FullPortfolio}/>
+            <Route exact path='/work' component={FullPortfolio} type='All'/>
             <Route path='/work/:projectID' component={Project}/>
         </Switch>
     )

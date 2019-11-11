@@ -223,6 +223,7 @@ body {
     opacity: 0;
     top: 0;
     transition: opacity 0.6s ease;
+    transition-delay: .2s;
   }
 
   #product-ticker:hover {
@@ -374,8 +375,49 @@ body {
     left: 0;
     width: 140vw;
   }
+  &[active] {
+    > div {
+      transition-delay: .2s;
+    }
+  }
+  &[active="all"] {
+    > div {
+      opacity:1;
+    }
+  }
+  &[active="one"] {
+    > div {
+      opacity:0;
+    }
+    #one {
+      opacity:1;
+    }
+  }
+  &[active="product-ticker"] {
+    > div {
+      opacity:0;
+    }
+    #product-ticker {
+      opacity:1;
+    }
+  }
+  &[active="visual-ticker"] {
+    > div {
+      opacity:0;
+    }
+    #visual-ticker {
+      opacity:1;
+    }
+  }
+  &[active="motion-ticker"] {
+    > div {
+      opacity:0;
+    }
+    #motion-ticker {
+      opacity:1;
+    }
+  }
 }
-
 
 @keyframes ticker{
   from{transform: translateX(100%);}
