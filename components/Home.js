@@ -26,9 +26,13 @@ class Home extends React.Component {
         this.handleInactive = this.handleInactive.bind(this);
     }
     handleActive(id, e) {
-        this.setState({
-            active:id
-        })
+        var thix = this;
+        clearTimeout(window.timer)
+        window.timer = setTimeout(function() {
+            thix.setState({
+                active:id
+            })
+        }, 400);
     }
     handleInactive() {
         this.setState({
