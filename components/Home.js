@@ -43,7 +43,7 @@ class Home extends React.Component {
     render() {
         return (
             <div className="Welcome" key="welcome" active={this.state.active}>
-                <div id="one" onMouseEnter={(e) => this.handleActive("one", e)} onMouseLeave={this.handleInactive}>
+                <div id="hey" onMouseEnter={(e) => this.handleActive("hey", e)} onMouseLeave={this.handleInactive}>
                     <HeySmall/>
                     <HeySmall/>
                 </div>

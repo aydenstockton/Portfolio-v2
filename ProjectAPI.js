@@ -217,7 +217,7 @@ const ProjectAPI = {
                 },
                 {
                     type:"row",
-                    title:"Customer Focus",
+                    title:"Hi-Fidelity Handoff",
                     description:"After weeks of testing wireframes, I created high fidelity prototypes and spec sheets. When the design sprint was done, I delivered the spec sheets to development and I continued to work with development throughout the build process.",
                     img:"/img/pref-handoff.webp"
                 },
@@ -225,11 +225,6 @@ const ProjectAPI = {
                     type:"media",
                     size:"large",
                     video:"/img/experience-in-context-white.mp4"
-                },
-                {
-                    type: "row-narrow",
-                    title: "Agent Reactions",
-                    description: "",
                 },
             ]
         },
