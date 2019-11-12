@@ -38,6 +38,7 @@ class Home extends React.Component {
         this.setState({
             active:"all"
         })
+        clearTimeout(window.timer)
     }
     render() {
         return (
