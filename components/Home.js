@@ -1,15 +1,12 @@
 import React from 'react';
-import Hey from './Hey';
 import WelcomeTo from'./WelcomeTo';
-import IDesign from './IDesign';
-import PDesigner from './PDesigner';
-import VDesigner from "./VDesigner";
 import HeySmall from './HeySmall';
 import IDesignSmall from './IDesignSmall';
 import PDesignerSmall from "./PDesignerSmall";
 import VDesignerSmall from "./VDesignerSmall";
 import MDesigner from "./MDesigner";
 import posed from "react-pose";
+import {NavLink, Link} from "react-router-dom";
 
 const ContainerParent = posed.div({
     enter: { staggerChildren: 50 }
@@ -46,6 +43,7 @@ class Home extends React.Component {
                 <div id="hey" onMouseEnter={(e) => this.handleActive("hey", e)} onMouseLeave={this.handleInactive}>
                     <HeySmall/>
                     <HeySmall/>
+                    <Link to='/about'/>
                 </div>
                 <div>
                     <WelcomeTo/>
@@ -58,22 +56,24 @@ class Home extends React.Component {
                 <div id="product-ticker" onMouseEnter={(e) => this.handleActive("product-ticker", e)} onMouseLeave={this.handleInactive}>
                     <PDesignerSmall/>
                     <PDesignerSmall/>
+                    <Link to='/work#product'/>
                 </div>
-                <div id="visual-ticker" onMouseEnter={(e) => this.handleActive("visual-ticker", e)} onMouseLeave={this.handleInactive}>
+                <div id="visual-ticker" onMouseEnter={(e) => this.handleActive("visual-ticker", e)} onMouseLeave={this.handleInactive} to='/work#visual'>
                     <VDesignerSmall/>
                     <VDesignerSmall/>
+                    <Link to='/work#visual'/>
                 </div>
                 <div id="motion-ticker" onMouseEnter={(e) => this.handleActive("motion-ticker", e)} onMouseLeave={this.handleInactive}>
                     <MDesigner/>
                     <MDesigner/>
                 </div>
-                <video playsinline autoPlay loop muted id="productvideo">
+                <video playsInline autoPlay loop muted id="productvideo">
                     <source src="/img/test-video.mp4" type="video/mp4"/>
                 </video>
-                <video playsinline autoPlay loop muted id="visualvideo">
+                <video playsInline autoPlay loop muted id="visualvideo">
                     <source src="/img/den-video.mp4" type="video/mp4"/>
                 </video>
-                <video playsinline autoPlay loop muted id="motionvideo">
+                <video playsInline autoPlay loop muted id="motionvideo">
                     <source src="/img/mdesigner.mp4" type="video/mp4"/>
                 </video>
             </div>

@@ -17,7 +17,9 @@ function Thumbnails(props) {
         <ContainerParent className="work-wrapper">{thumbItems}</ContainerParent>
     );
 }
-
+function getQueryParameters(str) {
+    return (str || document.location.search).replace(/(^\?)/,'').split("&").map(function(n){return n = n.split("="),this[n[0]] = n[1],this}.bind({}))[0];
+}
 // The FullPortfolio iterates over all of the projects and creates
 // a link to their project page.
 class FullPortfolio extends React.Component {
@@ -31,7 +33,24 @@ class FullPortfolio extends React.Component {
         this.setState({
             type:type
         })
+
     }
+
+    componentDidMount() {
+        const type = window.location.hash.split("#");
+        if(type.length>1) {
+            let actualType = type[1];
+            this.setState({
+                type:actualType
+            });
+
+        }
+
+    }
+    componentDidUpdate() {
+        window.location.hash = this.state.type;
+    }
+
 
     render() {
         document.getElementsByTagName("BODY")[0].setAttribute("theme", "universe");
