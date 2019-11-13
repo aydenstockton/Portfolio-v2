@@ -791,6 +791,31 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
 
+"@egjs/component@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@egjs/component/-/component-2.1.2.tgz#c466a0a6fc6ba2d479814dcbe6ee4643c25a2e5b"
+  integrity sha512-7tnPiqxbSZ0porzlm0+/O3qZdanMj0zOq0sb17wQXuaRG49XKKKJaO+SacGnZDqf308N5hzJ0m9fZ4+j+VBvXA==
+
+"@egjs/infinitegrid@~3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@egjs/infinitegrid/-/infinitegrid-3.5.5.tgz#00da8be0254e7427895a17ac57dbcde4b2e84550"
+  integrity sha512-U/rraGr7TasKN8R9zshxo0W9lO+13AgWo7RkrxSQSEHIHVzc8B6lsdll9sXEoeiSLeb2qGxI0nkyNKxq7wHmIg==
+  dependencies:
+    "@egjs/component" "^2.1.2"
+
+"@egjs/list-differ@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@egjs/list-differ/-/list-differ-1.0.0.tgz#2277aff52e3e4bd9318d5c30ffc3ba3b6216f05e"
+  integrity sha512-HsbMKc0ZAQH+EUeCmI/2PvTYSybmkaWwakU8QGDYYgMVIg9BQ5sM0A0Nnombjxo2+JzXHxmH+jw//yGX+y6GYw==
+
+"@egjs/react-infinitegrid@^1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@egjs/react-infinitegrid/-/react-infinitegrid-1.6.2.tgz#0d0999442c01f4f21de71e0c3dfb1c0afcc31af5"
+  integrity sha512-sFHHlmebGMIWRsWKwm4Qkd/UWsC9v/6tA1XMVmijX0kGpGPaFdgYnXJJ+XJinxcmBO60BR/hbdQmJCBxgfVoEg==
+  dependencies:
+    "@egjs/infinitegrid" "~3.5.5"
+    "@egjs/list-differ" "^1.0.0"
+
 "@emotion/is-prop-valid@^0.7.3":
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.7.3.tgz#a6bf4fa5387cbba59d44e698a4680f481a8da6cc"

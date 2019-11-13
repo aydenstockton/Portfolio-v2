@@ -2,9 +2,11 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
 import Work from './Work'
+import PlayPage from './PlayPage/PlayPage'
 // import { spring, AnimatedSwitch } from 'react-router-transition';
 import AboutPage from './AboutPage/AboutPage';
 import posed, { PoseGroup } from 'react-pose';
+
 // import FullPortfolio from './FullPortfolio'
 
 // The Main component renders one of the three provided
@@ -60,6 +62,7 @@ const Main = () => (
                       <Switch location={location}>
                           <Route exact path='/' component={Home} key="home"/>
                           <Route path='/work' component={Work} key="work"/>
+                          <Route path='/play' component={PlayPage} key="play"/>
                           <Route path='/about' component={AboutPage} key="about"/>
                       </Switch>
                   </RouteContainer>
