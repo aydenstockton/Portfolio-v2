@@ -15,7 +15,8 @@
     "react-pose": "^4.0.9",
     "react-reveal": "^1.2.2",
     "react-router-scroll-top": "^0.2.1",
-    "react-scroll-parallax": "^2.2.0"
+    "react-scroll-parallax": "^2.2.0",
+    "react-stonecutter": "^0.3.10"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
