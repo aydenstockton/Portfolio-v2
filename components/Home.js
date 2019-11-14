@@ -56,12 +56,20 @@ class Home extends React.Component {
                 <div id="product-ticker" onMouseEnter={(e) => this.handleActive("product-ticker", e)} onMouseLeave={this.handleInactive}>
                     <PDesignerSmall/>
                     <PDesignerSmall/>
-                    <Link to='/work#product'/>
+                    <Link to={{
+                        pathname: '/work',
+                        state: {type: 'product'}
+                    }}
+                    />
                 </div>
                 <div id="visual-ticker" onMouseEnter={(e) => this.handleActive("visual-ticker", e)} onMouseLeave={this.handleInactive}>
                     <VDesignerSmall/>
                     <VDesignerSmall/>
-                    <Link to='/work#visual'/>
+                    <Link to={{
+                        pathname: '/work',
+                        state: {type: 'visual'}
+                    }}
+                    />
                 </div>
                 <div id="motion-ticker" onMouseEnter={(e) => this.handleActive("motion-ticker", e)} onMouseLeave={this.handleInactive}>
                     <MDesigner/>

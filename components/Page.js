@@ -1,13 +1,14 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
-import Work from './Work'
 import PlayPage from './PlayPage/PlayPage'
 // import { spring, AnimatedSwitch } from 'react-router-transition';
 import AboutPage from './AboutPage/AboutPage';
 import posed, { PoseGroup } from 'react-pose';
+import Work from "./Work";
+import Project from "./Project/Project";
 
-// import FullPortfolio from './FullPortfolio'
+// import Work from './Work'
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /work
@@ -53,17 +54,18 @@ const RouteContainer = posed.div({
     exit: { opacity: 0 }
 });
 
-const Main = () => (
+const Page = () => (
     <Route
         render={({ location }) => (
-          <div id="main">
+          <div id="page">
               <PoseGroup>
                   <RouteContainer key={location.pathname}>
                       <Switch location={location}>
                           <Route exact path='/' component={Home} key="home"/>
-                          <Route path='/work' component={Work} key="work"/>
                           <Route path='/play' component={PlayPage} key="play"/>
                           <Route path='/about' component={AboutPage} key="about"/>
+                          <Route exact path='/work' component={Work}/>
+                          <Route path='/work/:projectID' component={Project}/>
                       </Switch>
                   </RouteContainer>
               </PoseGroup>
@@ -72,4 +74,4 @@ const Main = () => (
     />
 )
 
-export default Main
+export default Page
