@@ -1,6 +1,6 @@
 import React from 'react';
-import WelcomeTo from'./WelcomeTo';
 import HeySmall from './HeySmall';
+import WelcomeTo from'./WelcomeTo';
 import IDesignSmall from './IDesignSmall';
 import PDesignerSmall from "./PDesignerSmall";
 import VDesignerSmall from "./VDesignerSmall";
@@ -40,7 +40,7 @@ class Home extends React.Component {
     render() {
         return (
             <div className="Welcome" key="welcome" active={this.state.active}>
-                <div id="hey" onMouseEnter={(e) => this.handleActive("hey", e)} onMouseLeave={this.handleInactive}>
+                <div id="hey-ticker" onMouseEnter={(e) => this.handleActive("hey", e)} onMouseLeave={this.handleInactive}>
                     <HeySmall/>
                     <HeySmall/>
                     <Link to='/about'/>
@@ -58,7 +58,7 @@ class Home extends React.Component {
                     <PDesignerSmall/>
                     <Link to='/work#product'/>
                 </div>
-                <div id="visual-ticker" onMouseEnter={(e) => this.handleActive("visual-ticker", e)} onMouseLeave={this.handleInactive} to='/work#visual'>
+                <div id="visual-ticker" onMouseEnter={(e) => this.handleActive("visual-ticker", e)} onMouseLeave={this.handleInactive}>
                     <VDesignerSmall/>
                     <VDesignerSmall/>
                     <Link to='/work#visual'/>
@@ -66,6 +66,7 @@ class Home extends React.Component {
                 <div id="motion-ticker" onMouseEnter={(e) => this.handleActive("motion-ticker", e)} onMouseLeave={this.handleInactive}>
                     <MDesigner/>
                     <MDesigner/>
+                    <Link to='/play'/>
                 </div>
                 <video playsInline autoPlay loop muted id="productvideo">
                     <source src="/img/test-video.mp4" type="video/mp4"/>
