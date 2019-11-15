@@ -1,29 +1,43 @@
 import React from 'react';
 import { CSSGrid, measureItems, makeResponsive } from 'react-stonecutter';
-import InfiniteGrid, {GridLayout} from "@egjs/infinitegrid";
 import PlayAPI from "../../PlayAPI";
+import InfiniteGrid, {GridLayout} from "@egjs/infinitegrid";
+import Masonry from 'react-masonry-component'
 
-const Grid = makeResponsive(measureItems(CSSGrid), {
-    maxWidth: 1920,
-    minPadding: 100
-});
+const masonryOptions = {
+    transitionDuration: 0
+};
 
-class PlayPage extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
+class Gallery extends React.Component {
     render() {
-        const list = PlayAPI.all();
-
-        document.getElementsByTagName("BODY")[0].setAttribute("theme", "universe");
+        const childElements = PlayAPI.all().map(function(x){
+            return (
+                <li className="image-element-class">
+                    {x.image ? (
+                        <img src={x.image} />
+                        ) : (
+                    <video  src={x.video} playsInline autoPlay loop muted/>
+                        )
+                    }
+                </li>
+            );
+        });
 
         return (
-            <Grid>
-                <div type={list.type}>{list.src}</div>
-            </Grid>
-        )
-    };
+            <Masonry
+                className={'my-gallery-class'} // default ''
+                elementType={'ul'} // default 'div'
+                options={masonryOptions} // default {}
+                disableImagesLoaded={false} // default false
+                updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
+                imagesLoadedOptions={imagesLoadedOptions} // default {}
+            >
+                {childElements}
+            </Masonry>
+        );
+    }
 }
 
-export default PlayPage
+export default Gallery;

@@ -796,7 +796,7 @@
   resolved "https://registry.yarnpkg.com/@egjs/component/-/component-2.1.2.tgz#c466a0a6fc6ba2d479814dcbe6ee4643c25a2e5b"
   integrity sha512-7tnPiqxbSZ0porzlm0+/O3qZdanMj0zOq0sb17wQXuaRG49XKKKJaO+SacGnZDqf308N5hzJ0m9fZ4+j+VBvXA==
 
-"@egjs/infinitegrid@^3.6.0":
+"@egjs/infinitegrid@^3.4.0", "@egjs/infinitegrid@^3.6.0":
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/@egjs/infinitegrid/-/infinitegrid-3.6.0.tgz#7c378f5345099237fcdba43f9b778e0d3b4dbb81"
   integrity sha512-dAKmWaJrSAfpMH1Fa1WLj8nvEbBIpEvko/ExPG6ybCkd8zsX/jhCo5gAS9MSMQcqz0HjKwKFKoFJ3vR0xV8h0Q==
@@ -831,6 +831,13 @@
   dependencies:
     "@egjs/infinitegrid" "~3.5.5"
     "@egjs/list-differ" "^1.0.0"
+
+"@egjs/react-layout@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@egjs/react-layout/-/react-layout-1.4.0.tgz#e6b856b38775d2af12209a6ebb6e40e97ca4419d"
+  integrity sha512-nbypNb4Jh6WizXQm4Zoos++XqxponXBN30YzUrigmLVr3qrVsB++gMitugB7GBBpFsq1zdp6U8LXJRo8/vYVrw==
+  dependencies:
+    "@egjs/infinitegrid" "^3.4.0"
 
 "@emotion/is-prop-valid@^0.7.3":
   version "0.7.3"
@@ -6130,7 +6137,7 @@ react-transition-group-plus@^0.5.0-alpha.1:
     object-assign "^4.0.1"
     prop-types "^15.5.10"
 
-"react@^15.3.2 || ^16.0.0":
+"react@^0.14.0 || ^15.0.0-0 || ^16.0.0-0":
   version "16.11.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.11.0.tgz#d294545fe62299ccee83363599bf904e4a07fdbb"
   integrity sha512-M5Y8yITaLmU0ynd0r1Yvfq98Rmll6q8AxaEe88c8e7LxO8fZ2cNgmFt0aGAS9wzf1Ao32NKXtCl+/tVVtkxq6g==
