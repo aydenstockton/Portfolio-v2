@@ -1,8 +1,7 @@
 import React from 'react';
-import { CSSGrid, measureItems, makeResponsive } from 'react-stonecutter';
 import PlayAPI from "../../PlayAPI";
-import InfiniteGrid, {GridLayout} from "@egjs/infinitegrid";
-import Masonry from 'react-masonry-component'
+import Masonry from 'react-masonry-component';
+import "./styles.pcss";
 
 const masonryOptions = {
     transitionDuration: 0
@@ -14,28 +13,30 @@ class Gallery extends React.Component {
     render() {
         const childElements = PlayAPI.all().map(function(x){
             return (
-                <li className="image-element-class">
-                    {x.image ? (
-                        <img src={x.image} />
-                        ) : (
-                    <video  src={x.video} playsInline autoPlay loop muted/>
-                        )
-                    }
-                </li>
+                    <div className="masonry-element">
+                        {x.image ? (
+                            <img src={x.image} />
+                            ) : (
+                        <video  src={x.video} playsInline autoPlay loop muted/>
+                            )
+                        }
+                    </div>
             );
         });
 
         return (
-            <Masonry
-                className={'my-gallery-class'} // default ''
-                elementType={'ul'} // default 'div'
-                options={masonryOptions} // default {}
-                disableImagesLoaded={false} // default false
-                updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-                imagesLoadedOptions={imagesLoadedOptions} // default {}
-            >
-                {childElements}
-            </Masonry>
+            <div className='play-center'>
+                <Masonry
+                    className={'play-layout'} // default ''
+                    elementType={'div'} // default 'div'
+                    options={masonryOptions} // default {}
+                    disableImagesLoaded={false} // default false
+                    updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
+                    imagesLoadedOptions={imagesLoadedOptions} // default {}
+                >
+                    {childElements}
+                </Masonry>
+            </div>
         );
     }
 }
