@@ -9,7 +9,7 @@ const ProjectAPI = {
             name: "Q Mobile App",
             type: "product",
             theme: "universe",
-            src: "/img/q-thumbnail.webp",
+            src: "/img/q-thumbnail",
             logo:"/img/q-logo.svg",
             hero:"/img/q-banner.webp",
             introLeft:[
@@ -108,7 +108,7 @@ const ProjectAPI = {
             name: "Gravity Series",
             type: "visual",
             theme: "universe",
-            src: "/img/chocolate-thumbnail.webp",
+            src: "/img/chocolate-thumbnail",
             logo:"/img/chocolate-box-logo-color.svg",
             hero:"/img/chocolate-banner.webp",
             introLeft:[
@@ -160,7 +160,7 @@ const ProjectAPI = {
             name: "Preference History",
             type: "product",
             theme: "canvas",
-            src: "/img/pref-hist-thumbnail.webp",
+            src: "/img/pref-hist-thumbnail",
             logo:"/img/aaa-logo-color.svg",
             hero:"/img/pref-hist-banner.webp",
             introLeft:[
@@ -234,7 +234,7 @@ const ProjectAPI = {
             name: "Swift Shift",
             type: "product",
             theme: "universe",
-            src: "/img/ss-thumbnail.webp",
+            src: "/img/ss-thumbnail",
             logo:"/img/ss-logo.svg",
             hero:"/img/ss-banner.webp",
             introLeft:[
@@ -308,7 +308,7 @@ const ProjectAPI = {
             name: "Business Card",
             type: "visual",
             theme: "universe",
-            src: "/img/as-card-thumbnail.webp",
+            src: "/img/as-card-thumbnail",
             logo:"/img/as-card-logo.svg",
             hero:"/img/as-card-banner.webp",
             introLeft:[
@@ -360,7 +360,7 @@ const ProjectAPI = {
             name: "Premium Change",
             type: "product",
             theme: "canvas",
-            src: "/img/pct-thumbnail.webp",
+            src: "/img/pct-thumbnail",
             logo:"/img/aaa-logo-color.svg",
             hero:"/img/pct-banner.webp",
             introLeft:[
@@ -435,7 +435,7 @@ const ProjectAPI = {
             name: "okra",
             type: "visual",
             theme: "universe",
-            src: "/img/okra-thumbnail.webp",
+            src: "/img/okra-thumbnail",
             logo:"/img/okra-logo.png",
             hero:"/img/okra-banner.webp",
             introLeft:[
@@ -478,7 +478,7 @@ const ProjectAPI = {
             name: "MyPolicy Mobile App",
             type: "visual",
             theme: "universe",
-            src: "/img/mp-app-thumbnail.webp",
+            src: "/img/mp-app-thumbnail",
             logo:"/img/mp-app-logo.svg",
             hero:"/img/mp-app-banner.webp",
             introLeft:[
@@ -535,7 +535,7 @@ const ProjectAPI = {
             name: "New York Times",
             type: "visual",
             theme: "universe",
-            src: "/img/nyt-thumbnail.webp",
+            src: "/img/nyt-thumbnail",
             logo:"/img/nyt-t-logo.svg",
             hero:"/img/nyt-banner.webp",
             introLeft:[
@@ -598,7 +598,7 @@ const ProjectAPI = {
             name: "Vista",
             type: "product",
             theme: "canvas",
-            src: "/img/vista-thumbnail.webp",
+            src: "/img/vista-thumbnail",
             logo:"/img/aaa-logo-color.svg",
             hero:"/img/vista-banner.webp",
             introLeft:[

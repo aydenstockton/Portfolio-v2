@@ -13,9 +13,7 @@
     "@egjs/react-infinitegrid": "^1.6.2",
     "@egjs/react-layout": "^1.4.0",
     "img": "^3.0.3",
-    "normalize.css": "^8.0.1",
-    "react-image-webp": "^0.6.0",
-    "react-masonry-component": "^6.2.1"
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
@@ -39,7 +37,9 @@
     "react-scroll-parallax": "^2.2.0",
     "react-stonecutter": "^0.3.10",
     "stylelint": "^11.1.1",
-    "stylelint-config-standard": "^19.0.0"
+    "stylelint-config-standard": "^19.0.0",
+    "react-image-webp": "^0.6.0",
+    "react-masonry-component": "^6.2.1"
   },
   "staticFiles": {
     "staticPath": "public",
