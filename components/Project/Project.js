@@ -6,6 +6,7 @@ import "./styles.pcss";
 import { Parallax } from 'react-scroll-parallax';
 import Fade from 'react-reveal';
 import posed, { PoseGroup } from 'react-pose'
+import Image from "react-image-webp";
 
 const Rows = ({layout}) => (
     layout.map((row, index) => (
@@ -100,7 +101,10 @@ const Hero = ({logo, hero}) => (
         </ContainerParent>
         <div>
             <Parallax className="banner" y={[-20, 20]} tagOuter="figure">
-                <img src={hero}/>
+                <Image
+                    webp={hero + '.webp'}
+                    src={hero + '.png'}
+                />
             </Parallax>
         </div>
     </div>
