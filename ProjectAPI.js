@@ -673,8 +673,6 @@ const ProjectAPI = {
     },
     get: function (id) {
         //const isProject = p => p.string === id
-
-
         return this.projects.find(function(project) {
             if(project.id === id) {
                 return true;
@@ -683,7 +681,25 @@ const ProjectAPI = {
         });
 
         //return this.projects.find(isProject);
+    },
+    /*
+        ProjectAPI.byProperty({type:"visual"});
+    */
+    byProperty: function(property) {
+        if(property.type==="all") {
+            return this.projects();
+        }
+        return findByMatchingProperties(this.all(), property);
     }
 };
+
+function findByMatchingProperties(set, properties) {
+    return set.filter(function (entry) {
+        return Object.keys(properties).every(function (key) {
+            return entry[key] === properties[key];
+        });
+    });
+}
+
 
 export default ProjectAPI
