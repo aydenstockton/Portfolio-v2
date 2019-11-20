@@ -11,7 +11,6 @@ const ContainerChild = posed.div({
 
 const Thumbnail = ({name, src, number, id, type, webp}) => (
         <Link to={`/work/${id}`} type={type}>
-
                 <div className="Thumbnail" key={number}>
                     <div className="picture-wrapper">
                         <Image
