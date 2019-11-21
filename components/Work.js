@@ -12,8 +12,8 @@ const ContainerParent = function(){
 
 function Thumbnails(props) {
     const Item = posed.div({
-        enter: { y: 0, opacity: 1 },
-        exit: { y: 50, opacity: 0 },
+        enter: { y: 50, x:0, opacity: 1 }
+        //exit: { y: -51, x:0, opacity: 0 },
         // flip: {
         //     scale: 1,
         //     transition: {
@@ -27,7 +27,7 @@ function Thumbnails(props) {
         //     }
         // }
     })
-    const thumbItems = props.thumbs.map((thumb) =>
+    const thumbItems = props.children.map((thumb) =>
         <Item key={thumb.number}>
             <Thumbnail name={thumb.name} src={thumb.src} number={thumb.number} id={thumb.id}/>
         </Item>
@@ -45,10 +45,16 @@ class Work extends React.Component {
         super(props);
 
         this.state = {
-            type:"all",
-            projects:ProjectAPI.all()
+            type:null,
+            projects:[]
         }
         this.handleType = this.handleType.bind(this);
+    }
+    shouldComponentUpdate(nextProps, nextState) {
+        if(nextState.type===this.state.type) {
+            return false;
+        }
+        return true;
     }
     handleType(type, e) {
         this.setState({
@@ -65,17 +71,20 @@ class Work extends React.Component {
         //     });
         // }, 1000);
 
-        let state = this.props.location.state;
-        if(!state) {
-            return false;
-        }
-
-        let type = this.props.location.state.type;
-        if(type) {
-            this.setState({
-                type:type
-            });
-        }
+        // let state = this.props.location.state;
+        // if(!state) {
+        //     return false;
+        // }
+        //
+        // let type = this.props.location.state.type;
+        // if(type) {
+        //     this.setState({
+        //         type:type
+        //     });
+        // }
+        // this.state = {
+        //     projects:ProjectAPI.all()
+        // }
     }
     componentDidUpdate() {
     }
@@ -87,7 +96,7 @@ class Work extends React.Component {
         return (
             <div type={this.state.type}>
                 <ProjectFilters handleType={this.handleType}/>
-                <Thumbnails thumbs={this.state.projects}/>
+                <Thumbnails>{this.state.projects}</Thumbnails>
             </div>
         )
     }

@@ -687,7 +687,7 @@ const ProjectAPI = {
     */
     byProperty: function(property) {
         if(property.type==="all") {
-            return this.projects();
+            return this.all();
         }
         return findByMatchingProperties(this.all(), property);
     }

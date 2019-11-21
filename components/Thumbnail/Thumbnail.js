@@ -4,10 +4,10 @@ import posed from "react-pose";
 import './styles.pcss';
 import Image from 'react-image-webp';
 
-const ContainerChild = posed.div({
-    // enter: { y: 0, opacity: 1 },
-    // exit: { y: 50, opacity: 0 }
-});
+// const ContainerChild = posed.div({
+//     // enter: { y: 0, opacity: 1 },
+//     // exit: { y: 50, opacity: 0 }
+// });
 
 const Thumbnail = ({name, src, number, id, type, webp}) => (
         <Link to={`/work/${id}`} type={type}>

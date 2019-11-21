@@ -50,8 +50,8 @@ import Project from "./Project/Project";
 // };
 
 const RouteContainer = posed.div({
-    enter: { opacity: 1, delay: 300, beforeChildren: true },
-    exit: { opacity: 0 }
+    // enter: { opacity: 1, delay: 300, beforeChildren: true },
+    // exit: { opacity: 0 }
 });
 
 const Page = () => (
