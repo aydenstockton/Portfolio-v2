@@ -64,6 +64,7 @@ class Work extends React.Component {
     }
 
     componentDidMount() {
+
         // setInterval(() => {
         //     var a = Array.from({length: 10}, () => Math.floor(Math.random() * 10));
         //     this.setState({
@@ -86,6 +87,7 @@ class Work extends React.Component {
         //     type:this.props.location.state.type,
         //     projects:ProjectAPI.all()
         // }
+
         let type = "all";
         if(this.props.location.state && this.props.location.state.type) {
             type=this.props.location.state.type;
@@ -93,6 +95,7 @@ class Work extends React.Component {
         this.handleType(type)
     }
     componentDidUpdate() {
+
     }
 
 

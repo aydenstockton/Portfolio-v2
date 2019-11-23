@@ -91,7 +91,6 @@ const ProjectIntro = ({intro}) => (
         </ContainerParent>
     </ContainerParent>
 );
-
 const Hero = ({logo, hero}) => (
     <div project="hero">
         <ContainerParent>
@@ -102,8 +101,8 @@ const Hero = ({logo, hero}) => (
         <div>
             <Parallax className="banner" y={[-20, 20]} tagOuter="figure">
                 <Image
-                    webp={hero + '.webp'}
-                    src={hero + '.png'}
+                    webp={hero.path + '.webp'}
+                    src={hero.path + "." + hero.ext}
                 />
             </Parallax>
         </div>

@@ -15,10 +15,10 @@ class AboutPage extends React.Component {
     }
 
     render() {
-        document.getElementsByTagName("BODY")[0].setAttribute("page", "about");
         const list = AboutAPI.all();
 
         document.getElementsByTagName("BODY")[0].setAttribute("theme", "universe");
+        document.getElementsByTagName("BODY")[0].setAttribute("page", "about");
 
         return (
             <ContainerParent type="aboutpage">

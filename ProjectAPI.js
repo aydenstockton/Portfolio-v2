@@ -11,7 +11,10 @@ const ProjectAPI = {
             theme: "universe",
             src: "/img/q-thumbnail",
             logo:"/img/q-logo.svg",
-            hero:"/img/q-banner",
+            hero:{
+                path:"/img/q-banner",
+                ext:"png"
+            },
             introLeft:[
                 {
                    title:"PROJECT OVERVIEW",
