@@ -16,7 +16,10 @@ const masonryOptions = {
 const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
 class Gallery extends React.Component {
+
+
     render() {
+        document.getElementsByTagName("BODY")[0].setAttribute("page", "play");
         const childElements = PlayAPI.all().map(function(x){
             return (
                     <div className="masonry-element">

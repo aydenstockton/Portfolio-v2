@@ -50,8 +50,8 @@ import Project from "./Project/Project";
 // };
 
 const RouteContainer = posed.div({
-    // enter: { opacity: 1, delay: 300, beforeChildren: true },
-    // exit: { opacity: 0 }
+    enter: { opacity: 1, delay: 300, beforeChildren: true },
+    exit: { opacity: 0 }
 });
 
 const Page = () => (
@@ -64,7 +64,7 @@ const Page = () => (
                           <Route exact path='/' component={Home} key="home"/>
                           <Route path='/play' component={PlayPage} key="play"/>
                           <Route path='/about' component={AboutPage} key="about"/>
-                          <Route exact path='/work' component={Work}/>
+                          <Route exact path='/work' component={Work} key="work"/>
                           <Route path='/work/:projectID' component={Project}/>
                       </Switch>
                   </RouteContainer>

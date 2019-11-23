@@ -38,6 +38,7 @@ class Home extends React.Component {
         clearTimeout(window.timer)
     }
     render() {
+        document.getElementsByTagName("BODY")[0].setAttribute("page", "home");
         return (
             <div className="Welcome" key="welcome" active={this.state.active}>
                 <div id="hey-ticker" onMouseEnter={(e) => this.handleActive("hey", e)} onMouseLeave={this.handleInactive}>

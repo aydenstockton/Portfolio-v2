@@ -12,8 +12,8 @@ const ContainerParent = function(){
 
 function Thumbnails(props) {
     const Item = posed.div({
-        enter: { y: 50, x:0, opacity: 1 }
-        //exit: { y: -51, x:0, opacity: 0 },
+        enter: { y: 50, x:0, opacity: 1, animateOnMount: true},
+        exit: { y: 0, x:0, opacity: 0 }
         // flip: {
         //     scale: 1,
         //     transition: {
@@ -27,14 +27,14 @@ function Thumbnails(props) {
         //     }
         // }
     })
-    const thumbItems = props.children.map((thumb) =>
+    const thumbItems = props.projects.map((thumb) =>
         <Item key={thumb.number}>
             <Thumbnail name={thumb.name} src={thumb.src} number={thumb.number} id={thumb.id}/>
         </Item>
             );
     return (
         <div className="work-wrapper">
-            <PoseGroup>{thumbItems}</PoseGroup>
+            <PoseGroup animateOnMount={false} flipMove={false} enterPose='enter' exitPose='exit'>{thumbItems}</PoseGroup>
         </div>
     );
 }
@@ -83,8 +83,14 @@ class Work extends React.Component {
         //     });
         // }
         // this.state = {
+        //     type:this.props.location.state.type,
         //     projects:ProjectAPI.all()
         // }
+        let type = "all";
+        if(this.props.location.state && this.props.location.state.type) {
+            type=this.props.location.state.type;
+        }
+        this.handleType(type)
     }
     componentDidUpdate() {
     }
@@ -92,11 +98,12 @@ class Work extends React.Component {
 
     render() {
         document.getElementsByTagName("BODY")[0].setAttribute("theme", "universe");
+        document.getElementsByTagName("BODY")[0].setAttribute("page", "work");
 
         return (
             <div type={this.state.type}>
                 <ProjectFilters handleType={this.handleType}/>
-                <Thumbnails>{this.state.projects}</Thumbnails>
+                <Thumbnails projects={this.state.projects} />
             </div>
         )
     }
