@@ -257,11 +257,15 @@ body {
 }
 
 .project-page {
-    padding: 0 104px;
+    padding: 0 16px;
+    align-items: center;
 
     .project-piece {
         flex-direction: column;
         min-height: 420px;
+        &[layout=row] {
+            max-width: 592px;
+        }
 
         &[layout=row-narrow] {
             margin: 0 auto;

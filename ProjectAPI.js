@@ -113,7 +113,10 @@ const ProjectAPI = {
             theme: "universe",
             src: "/img/chocolate-thumbnail",
             logo:"/img/chocolate-box-logo-color.svg",
-            hero:"/img/chocolate-banner",
+            hero:{
+                path:"/img/chocolate-banner",
+                ext:"png"
+            },
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -165,7 +168,10 @@ const ProjectAPI = {
             theme: "canvas",
             src: "/img/pref-hist-thumbnail",
             logo:"/img/aaa-logo-color.svg",
-            hero:"/img/pref-hist-banner",
+            hero:{
+                path:"/img/pref-hist-banner",
+                ext:"png"
+            },
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -239,7 +245,10 @@ const ProjectAPI = {
             theme: "universe",
             src: "/img/ss-thumbnail",
             logo:"/img/ss-logo.svg",
-            hero:"/img/ss-banner",
+            hero:{
+                path:"/img/ss-banner",
+                ext:"png"
+            },
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -313,7 +322,10 @@ const ProjectAPI = {
             theme: "universe",
             src: "/img/as-card-thumbnail",
             logo:"/img/as-card-logo.svg",
-            hero:"/img/as-card-banner",
+            hero:{
+                path:"/img/as-card-banner",
+                ext:"png"
+            },
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -365,7 +377,10 @@ const ProjectAPI = {
             theme: "canvas",
             src: "/img/pct-thumbnail",
             logo:"/img/aaa-logo-color.svg",
-            hero:"/img/pct-banner",
+            hero:{
+                path:"/img/pct-banner",
+                ext:"png"
+            },
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -440,7 +455,10 @@ const ProjectAPI = {
             theme: "universe",
             src: "/img/okra-thumbnail",
             logo:"/img/okra-logo.png",
-            hero:"/img/okra-banner",
+            hero:{
+                path:"/img/okra-banner",
+                ext:"png"
+            },
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -483,7 +501,10 @@ const ProjectAPI = {
             theme: "universe",
             src: "/img/mp-app-thumbnail",
             logo:"/img/mp-app-logo.svg",
-            hero:"/img/mp-app-banner",
+            hero:{
+                path:"/img/mp-app-banner",
+                ext:"png"
+            },
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -540,7 +561,10 @@ const ProjectAPI = {
             theme: "universe",
             src: "/img/nyt-thumbnail",
             logo:"/img/nyt-t-logo.svg",
-            hero:"/img/nyt-banner",
+            hero:{
+                path:"/img/nyt-banner",
+                ext:"png"
+            },
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
@@ -603,7 +627,10 @@ const ProjectAPI = {
             theme: "canvas",
             src: "/img/vista-thumbnail",
             logo:"/img/aaa-logo-color.svg",
-            hero:"/img/vista-banner",
+            hero:{
+                path:"/img/vista-banner",
+                ext:"png"
+            },
             introLeft:[
                 {
                     title:"PROJECT OVERVIEW",
