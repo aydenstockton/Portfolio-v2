@@ -63,6 +63,7 @@ figure {
         align-items: center;
         img {
             width: 111%;
+            height: 111%;
             filter: blur(8px);
             -webkit-filter: blur(8px);
             opacity: 0.5;
@@ -205,6 +206,124 @@ body {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+[project=hero] {
+    height: 304px;
+
+        > div:first-child {
+            width: 144px;
+            height: 148px;
+        }
+
+    }
+
+}
+
+[project=intro] {
+    display: flex;
+    justify-content: center;
+    padding: 64px 0;
+    width: 100vw;
+    position: relative;
+    top: -32px;
+    > .introtext {
+        width: 80%;
+        max-width: 1000px;
+        > div {
+            display: flex;
+            h1 {
+                display: flex;
+                margin: 0 0 40px 0;
+            }
+            .seperator {
+                &:first-child {
+                    flex: 1;
+                    margin-right: 96px;
+                }
+
+                &:last-child {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+.project-page {
+    padding: 0 104px;
+
+    .project-piece {
+        flex-direction: column;
+        min-height: 420px;
+
+        &[layout=row-narrow] {
+            margin: 0 auto;
+            min-height: 0;
+            .project-description {
+                margin-bottom: 144px;
+            }
+            .project-video {
+                margin-bottom: 48px;
+
+                video {
+                    max-width: 80%;
+                }
+            }
+        }
+
+        &:nth-child(odd) {
+            flex-direction: column;
+        }
+
+        &:nth-child(even) {
+            .project-image {
+                padding: 0;
+            }
+
+        }
+
+        &[layout=media] {
+            margin: 88px 0;
+            min-height: 0;
+
+            .project-image {
+                padding: 0;
+            }
+        }
+
+        .project-description {
+            order: 2;
+
+            div {
+
+                title {
+                    font-size: 48px;
+                    max-width: 100%;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .project-image {
+            padding: 0;
+            margin-bottom: 48px;
+
+            img {
+            }
+        }
+
+        .project-video {
+            video {
             }
         }
     }
