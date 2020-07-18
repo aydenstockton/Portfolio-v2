@@ -13,7 +13,7 @@
     "@egjs/react-infinitegrid": "^1.6.2",
     "@egjs/react-layout": "^1.4.0",
     "img": "^3.0.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
